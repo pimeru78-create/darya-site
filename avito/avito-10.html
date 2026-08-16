@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><link rel="stylesheet" href="avito.css">
+<style>
+  .cta-wrap{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;}
+  .cta-h1{font-size:58px; font-weight:700; margin:24px 0 16px; letter-spacing:-0.01em;}
+  .cta-desc{color:var(--muted); font-size:24px; font-weight:700; max-width:680px; margin-bottom:40px; line-height:1.5;}
+  .contacts{display:flex; flex-direction:column; gap:16px; width:100%; max-width:620px;}
+  .crow{display:flex; align-items:center; gap:18px; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px 26px;}
+  .crow .ic-badge{width:56px; height:56px; border-radius:14px;}
+  .crow .ic-badge .ic{width:26px; height:26px;}
+  .crow .clabel{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:25px;}
+  .site-tag{margin-top:36px; font-family:'Space Grotesk',sans-serif; font-size:22px; color:var(--green2); font-weight:700;}
+</style></head>
+<body>
+<div class="slide">
+  <div class="blobs"><div class="blob blob1"></div><div class="blob blob2"></div></div>
+  <div class="brand"><div class="brand-name"><span class="dot"></span>Дарья Чуручанова</div><div class="pagenum">10/10</div></div>
+  <svg style="display:none">
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1.2-5A8 8 0 1121 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 006 6l1.5-2 4.5 1.5v3a2 2 0 01-2.2 2A18 18 0 014.5 5.2 2 2 0 016.5 3z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+  </svg>
+  <div class="content">
+    <div class="cta-wrap">
+      <span class="eyebrow">-10% на первую разработку · Частный мастер</span>
+      <h1 class="cta-h1">Готовы обсудить проект?</h1>
+      <p class="cta-desc">Напишите удобным способом — отвечаю быстро и без лишних формальностей.</p>
+      <div class="contacts">
+        <div class="crow"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-send"/></svg></div><div class="clabel">Telegram: @dasha_vibecodes</div></div>
+        <div class="crow"><div class="ic-badge badge-2"><svg class="ic"><use href="#i-chat"/></svg></div><div class="clabel">WhatsApp</div></div>
+        <div class="crow"><div class="ic-badge badge-3"><svg class="ic"><use href="#i-phone"/></svg></div><div class="clabel">+7 912 323-26-87</div></div>
+        <div class="crow"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-mail"/></svg></div><div class="clabel">churuchanova.dv@mail.ru</div></div>
+      </div>
+      <div class="site-tag">darya-churuchanova.netlify.app</div>
+    </div>
+  </div>
+</div>
+</body></html>

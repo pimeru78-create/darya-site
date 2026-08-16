@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><link rel="stylesheet" href="avito.css">
+<style>
+  .h2{font-size:50px; font-weight:700; margin:16px 0 10px;}
+  .lead{color:var(--muted); font-size:25px; font-weight:700; margin-bottom:34px;}
+  .why-grid{flex:1; display:grid; grid-template-columns:1fr 1fr; gap:24px; align-content:center;}
+  .why-card{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:34px; text-align:center;}
+  .why-card .ic-badge{margin:0 auto 18px;}
+  .why-card h3{font-size:28px; font-weight:700; margin-bottom:10px;}
+  .why-card p{color:var(--muted); font-size:20px; font-weight:700; line-height:1.45;}
+</style></head>
+<body>
+<div class="slide">
+  <div class="blobs"><div class="blob blob1"></div><div class="blob blob2"></div></div>
+  <div class="brand"><div class="brand-name"><span class="dot"></span>Дарья Чуручанова</div><div class="pagenum">9/10</div></div>
+  <svg style="display:none">
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 00-3 3 3 3 0 00-1 5.8A3.5 3.5 0 007 19a3 3 0 002.9-2.3M9 4a3 3 0 013 3v9a3 3 0 01-3 3M9 4v15"/><path d="M15 4a3 3 0 013 3 3 3 0 011 5.8A3.5 3.5 0 0117 19a3 3 0 01-2.9-2.3M15 4a3 3 0 00-3 3M15 4v15"/></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="M2 12l4-4 4 3 3-3 2 2"/><path d="M11 10l3.5 3.5a1.5 1.5 0 002.1-2.1L13 8"/><path d="M15 8l1.5-1.5a1.5 1.5 0 012.1 2.1L17 10l2 2a1.5 1.5 0 01-2.1 2.1"/><path d="M6 8l-4 4 3 3"/></symbol>
+  </svg>
+  <div class="content">
+    <h2 class="h2">Почему я</h2>
+    <p class="lead">Частный мастер — работаю быстро, честно и по делу</p>
+    <div class="why-grid">
+      <div class="why-card"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-bolt"/></svg></div><h3>Быстрый запуск</h3><p>Проекты — за считанные дни, без долгих согласований.</p></div>
+      <div class="why-card"><div class="ic-badge badge-2"><svg class="ic"><use href="#i-user"/></svg></div><h3>Частный мастер</h3><p>Работаю напрямую с вами, без посредников и агентств.</p></div>
+      <div class="why-card"><div class="ic-badge badge-3"><svg class="ic"><use href="#i-brain"/></svg></div><h3>Современный AI-стек</h3><p>Актуальные AI-инструменты для скорости и качества.</p></div>
+      <div class="why-card"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-handshake"/></svg></div><h3>Поддержка после запуска</h3><p>Остаюсь на связи и помогаю после сдачи проекта.</p></div>
+    </div>
+  </div>
+</div>
+</body></html>

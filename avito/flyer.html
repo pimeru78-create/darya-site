@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#050a06; --ink:#e9fbee; --muted:#a9c9b3; --green:#22c55e; --green2:#4ade80; --teal:#2dd4bf; --lime:#a3e635;
+    --grad:linear-gradient(135deg,#16a34a,#4ade80); --line:rgba(74,222,128,0.25);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{width:1654px; height:2339px; background:var(--bg); color:var(--ink); font-family:'Inter',Arial,sans-serif; position:relative; overflow:hidden;}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;}
+  .ic{width:1em; height:1em; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;}
+
+  .blobs{position:absolute; inset:0; z-index:0;}
+  .blob{position:absolute; border-radius:50%; filter:blur(140px); opacity:0.3;}
+  .b1{width:900px; height:900px; background:#16a34a; top:-260px; right:-260px;}
+  .b2{width:700px; height:700px; background:#2dd4bf; top:900px; left:-260px;}
+
+  .main{position:relative; z-index:2; padding:70px 80px 0;}
+  .brand{display:flex; align-items:center; gap:16px; margin-bottom:50px;}
+  .brand .dot{width:22px; height:22px; border-radius:50%; background:var(--grad); box-shadow:0 0 20px rgba(74,222,128,0.7);}
+  .brand span{font-weight:700; font-size:34px;}
+
+  .hero{margin-bottom:40px;}
+  .discount{display:inline-flex; align-items:baseline; gap:18px; background:var(--grad); color:#04170a; padding:26px 38px; border-radius:26px; margin-bottom:32px; box-shadow:0 0 60px rgba(74,222,128,0.5); width:fit-content;}
+  .discount .big{font-size:64px; font-weight:700; line-height:1;}
+  .discount .small{font-size:26px; font-weight:600;}
+  h1.title{font-size:92px; font-weight:700; line-height:1.05; letter-spacing:-0.01em; margin-bottom:22px;}
+  .title .grad{background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .subtitle{font-size:34px; color:var(--muted); line-height:1.4; max-width:1100px;}
+
+  .services{background:rgba(255,255,255,0.045); border:1px solid var(--line); border-radius:32px; padding:44px 50px; margin-bottom:36px;}
+  .srow{display:flex; align-items:center; justify-content:space-between; padding:18px 0; border-bottom:1px solid var(--line); gap:20px;}
+  .srow:last-child{border-bottom:none;}
+  .srow .sname{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:30px;}
+  .srow .sdesc{color:var(--muted); font-size:21px; margin-top:3px; font-weight:400;}
+  .srow .sprice{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:30px; color:var(--green2); white-space:nowrap;}
+
+  .cta-row{display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center;}
+  .qr-box{display:flex; align-items:center; gap:26px; background:rgba(74,222,128,0.08); border:1px solid var(--line); border-radius:26px; padding:26px 32px;}
+  .qr-box img{width:170px; height:170px; border-radius:14px; background:#fff; padding:8px;}
+  .qr-box .qt1{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:28px;}
+  .qr-box .qt2{color:var(--muted); font-size:22px; margin-top:6px;}
+  .perks{display:flex; flex-direction:column; gap:16px; font-size:26px; font-weight:600;}
+  .perks div{display:flex; align-items:center; gap:14px;}
+  .perks .ic{color:var(--green2); width:30px; height:30px; flex-shrink:0;}
+
+  .tabs-wrap{position:relative; z-index:2; margin-top:44px; border-top:3px dashed rgba(74,222,128,0.4);}
+  .tabs-label{text-align:center; color:var(--muted); font-size:22px; padding:14px 0 6px; letter-spacing:.05em;}
+  .tabs{display:flex;}
+  .tab{flex:1; border-right:2px dashed rgba(74,222,128,0.3); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; padding:20px 8px 24px; background:rgba(255,255,255,0.02);}
+  .tab:last-child{border-right:none;}
+  .tab img.qr{width:150px; height:150px; border-radius:10px; background:#fff; padding:7px;}
+  .tab .tphone{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; color:var(--ink); text-align:center; line-height:1.3;}
+  .tab .ttg{font-size:16px; color:var(--green2); font-weight:600;}
+</style></head>
+<body>
+<div class="blobs"><div class="blob b1"></div><div class="blob b2"></div></div>
+<div class="main">
+  <div class="brand"><span class="dot"></span><span>Дарья Чуручанова</span></div>
+
+  <div class="hero">
+    <div class="discount"><span class="big">-10%</span><span class="small">на первую разработку</span></div>
+    <h1 class="title">Сайты, чат-боты<br>и <span class="grad">AI-агенты</span><br>под ключ</h1>
+    <p class="subtitle">Частный мастер. Работаю быстро — от лендинга до умного AI-агента, который сам продаёт.</p>
+  </div>
+
+  <div class="services">
+    <div class="srow"><div><div class="sname">Сайты</div><div class="sdesc">лендинг, визитка, магазин — под задачу</div></div><div class="sprice">от 13 000 ₽</div></div>
+    <div class="srow"><div><div class="sname">Приложения</div><div class="sdesc">Mini App в Telegram и мобильные</div></div><div class="sprice">от 30 000 ₽</div></div>
+    <div class="srow"><div><div class="sname">Бот для заявок</div><div class="sdesc">приём заявок 24/7</div></div><div class="sprice">от 7 000 ₽</div></div>
+    <div class="srow"><div><div class="sname">AI Telegram-бот</div><div class="sdesc">отвечает клиентам сам</div></div><div class="sprice">от 15 000 ₽</div></div>
+    <div class="srow"><div><div class="sname">AI-агент</div><div class="sdesc">ведёт клиента до оплаты</div></div><div class="sprice">от 30 000 ₽</div></div>
+    <div class="srow"><div><div class="sname">Интернет-магазин</div><div class="sdesc">каталог, корзина, оплата</div></div><div class="sprice">от 25 000 ₽</div></div>
+  </div>
+
+  <div class="cta-row">
+    <div class="qr-box">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&margin=0&data=https://t.me/dasha_vibecodes" alt="QR">
+      <div><div class="qt1">Сканируй и пиши</div><div class="qt2">Telegram: @dasha_vibecodes</div></div>
+    </div>
+    <div class="perks">
+      <div><svg class="ic" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg> Быстрый запуск — от нескольких дней</div>
+      <div><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg> Первая консультация бесплатно</div>
+      <div><svg class="ic" viewBox="0 0 24 24"><path d="M2 12l4-4 4 3 3-3 2 2"/><path d="M11 10l3.5 3.5a1.5 1.5 0 002.1-2.1L13 8"/><path d="M15 8l1.5-1.5a1.5 1.5 0 012.1 2.1L17 10l2 2a1.5 1.5 0 01-2.1 2.1"/><path d="M6 8l-4 4 3 3"/></svg> Поддержка после запуска</div>
+    </div>
+  </div>
+</div>
+
+<div class="tabs-wrap">
+  <div class="tabs-label">✂ ОТОРВИ НОМЕР</div>
+  <div class="tabs">
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+    <div class="tab"><img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=0&data=https://t.me/dasha_vibecodes" alt="QR"><div class="tphone">+7 912<br>323-26-87</div><div class="ttg">@dasha_vibecodes</div></div>
+  </div>
+</div>
+</body></html>

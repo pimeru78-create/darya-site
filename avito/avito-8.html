@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><link rel="stylesheet" href="avito.css">
+<style>
+  .h2{font-size:50px; font-weight:700; margin:16px 0 28px;}
+  .list{flex:1; display:flex; flex-direction:column; gap:18px; justify-content:center;}
+</style></head>
+<body>
+<div class="slide">
+  <div class="blobs"><div class="blob blob1"></div><div class="blob blob2"></div></div>
+  <div class="brand"><div class="brand-name"><span class="dot"></span>Дарья Чуручанова</div><div class="pagenum">8/10</div></div>
+  <svg style="display:none">
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91-.79-.79-2.08-.8-2.91-.09z"/><path d="M12 15c-3 0-5-2.5-5-6 0-4 3-8 7-8 3 0 6 3 6 6 0 4-4 8-8 8z"/><circle cx="14.5" cy="9.5" r="1.5"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18"/><path d="M7 14h4"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 8V4M9 4h6"/><circle cx="9" cy="13.5" r="1.3"/><circle cx="15" cy="13.5" r="1.3"/><path d="M9 17h6"/></symbol>
+    <symbol id="i-magic" viewBox="0 0 24 24"><path d="M4 20L18 6"/><path d="M15 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"/></symbol>
+    <symbol id="i-device" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
+  </svg>
+  <div class="content">
+    <h2 class="h2">Форматы и цены</h2>
+    <div class="list">
+      <div class="row-item"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-rocket"/></svg></div><div><div class="ri-title">Лендинг / визитка</div><div class="ri-desc">Сайт под задачу за несколько дней</div></div><div class="ri-price">от 13 000 ₽</div></div>
+      <div class="row-item"><div class="ic-badge badge-2"><svg class="ic"><use href="#i-bag"/></svg></div><div><div class="ri-title">Интернет-магазин</div><div class="ri-desc">Каталог, корзина, оплата</div></div><div class="ri-price">от 25 000 ₽</div></div>
+      <div class="row-item"><div class="ic-badge badge-3"><svg class="ic"><use href="#i-bot"/></svg></div><div><div class="ri-title">Бот для заявок</div><div class="ri-desc">Приём заявок 24/7</div></div><div class="ri-price">от 7 000 ₽</div></div>
+      <div class="row-item"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-magic"/></svg></div><div><div class="ri-title">AI-агент</div><div class="ri-desc">Ведёт клиента до оплаты</div></div><div class="ri-price">от 30 000 ₽</div></div>
+      <div class="row-item"><div class="ic-badge badge-2"><svg class="ic"><use href="#i-device"/></svg></div><div><div class="ri-title">Mini App Telegram</div><div class="ri-desc">Приложение внутри Telegram</div></div><div class="ri-price">от 30 000 ₽</div></div>
+    </div>
+  </div>
+</div>
+</body></html>
