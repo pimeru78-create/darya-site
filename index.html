@@ -1,676 +1,1024 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Дарья Чуручанова — сайты, чат-боты и AI-агенты</title>
-<meta name="description" content="Создаю сайты, Telegram-ботов и AI-агентов под ключ. Быстрый запуск, современный дизайн, поддержка после сдачи проекта.">
-<link rel="canonical" href="https://darya-churuchanova.netlify.app/">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Дарья Чуручанова">
-<meta property="og:title" content="Дарья Чуручанова — сайты, чат-боты и AI-агенты">
-<meta property="og:description" content="Создаю сайты, Telegram-ботов и AI-агентов под ключ. Быстрый запуск, современный дизайн, поддержка после сдачи проекта.">
-<meta property="og:url" content="https://darya-churuchanova.netlify.app/">
-<meta property="og:image" content="https://darya-churuchanova.netlify.app/darya.jpg">
-<meta property="og:locale" content="ru_RU">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Дарья Чуручанова — сайты, чат-боты и AI-агенты">
-<meta name="twitter:description" content="Создаю сайты, Telegram-ботов и AI-агентов под ключ.">
-<meta name="twitter:image" content="https://darya-churuchanova.netlify.app/darya.jpg">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Дарья Чуручанова — сайты, чат-боты и AI-агенты",
-  "description": "Разработка сайтов, Telegram-ботов, AI-агентов и мини-приложений под ключ.",
-  "url": "https://darya-churuchanova.netlify.app/",
-  "image": "https://darya-churuchanova.netlify.app/darya.jpg",
-  "priceRange": "от 7 000 ₽",
-  "telephone": "+7-912-323-26-87",
-  "email": "churuchanova.dv@mail.ru",
-  "areaServed": "RU",
-  "sameAs": [
-    "https://t.me/dasha_vibecodes"
-  ]
-}
-</script>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Дарья Чуручанова — сайты, боты и AI-агенты</title>
+<meta name="description" content="Разработка сайтов, Telegram-ботов и AI-агентов под ключ. Официальный договор, фиксированная стоимость, гарантия 14 дней." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:        '#161616',
+          body:       '#3A3A40',
+          faint:      '#6B6B72',
+          canvas:     '#F8F9FA',
+          panel:      '#FFFFFF',
+          line:       '#E4E5EA',
+          accent:     '#2A4CFF',
+          accentdeep: '#1730C4',
+          accentlite: '#4F6BFF',
+          chip:       '#EAF0FF',
+          codebg:     '#1E1E1E',
+          navy:       '#0F172A',
+          navy2:      '#111C36',
+          neon:       '#2FE6FF',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+          body: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+        },
+        boxShadow: {
+          card:    '0 2px 6px rgba(20,20,25,0.05), 0 22px 46px -20px rgba(20,20,25,0.20)',
+          cardhov: '0 6px 14px rgba(20,20,25,0.07), 0 30px 60px -22px rgba(20,20,25,0.26)',
+          liftup:  '0 20px 44px -14px rgba(42,76,255,0.38)',
+          navycard:'0 18px 40px -16px rgba(15,23,42,0.45)',
+        }
+      }
+    }
+  }
+</script>
 <style>
-  :root{
-    --bg: #050a06;
-    --surface: rgba(255,255,255,0.035);
-    --ink: #e9fbee;
-    --muted: #83a690;
-    --line: rgba(74,222,128,0.16);
-    --green: #22c55e;
-    --green2: #4ade80;
-    --teal: #2dd4bf;
-    --lime: #a3e635;
-    --grad: linear-gradient(135deg, #16a34a, #4ade80);
-    --grad2: linear-gradient(135deg, #059669, #2dd4bf);
-    --grad3: linear-gradient(135deg, #4ade80, #a3e635);
-    --shadow: 0 8px 30px rgba(0,0,0,0.45);
-    --shadow-lg: 0 20px 60px rgba(0,0,0,0.6);
+  :root{ color-scheme: light; }
+  html{ scroll-behavior:smooth; }
+  body{ background:#F8F9FA; }
+  h1,h2,h3,.font-display{ font-family:'Fraunces', ui-serif, Georgia, serif; text-wrap: balance; }
+  .no-scrollbar::-webkit-scrollbar{ display:none; }
+  .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
+  .tabnum{ font-variant-numeric: tabular-nums; }
+
+  /* Отступ для якорей — sticky-хедер (72px) не должен перекрывать заголовок секции. */
+  #services, #portfolio, #trust, #process, #contact{ scroll-margin-top: 96px; }
+  #top{ scroll-margin-top: 0; }
+
+  .glow-field{ position:relative; overflow:hidden; }
+  .glow-blob{ position:absolute; border-radius:9999px; filter:blur(90px); opacity:.35; pointer-events:none; z-index:0; }
+
+  .card-track{ scroll-snap-type: x proximity; }
+  .card-slide{ scroll-snap-align: start; }
+  .gallery-fade{ transition: opacity .25s ease; }
+  .browser-dot{ width:8px; height:8px; border-radius:9999px; }
+
+  .tag-chip{ font-family:'IBM Plex Mono', ui-monospace, monospace; letter-spacing:.01em; }
+  .result-row + .result-row{ border-top:1px solid #EEF0F4; }
+  .result-row-dark + .result-row-dark{ border-top:1px solid rgba(255,255,255,0.1); }
+
+  .code-cursor{ display:inline-block; width:7px; height:15px; background:#2A4CFF; margin-left:2px; animation: blink 1.1s steps(2) infinite; vertical-align:-2px; }
+  @keyframes blink{ 50%{ opacity:0; } }
+
+  .lift-hover{ transition: transform .22s ease, box-shadow .22s ease; }
+  .lift-hover:hover{ transform: translateY(-4px); }
+
+  .dot-btn{ width:8px; height:8px; border-radius:9999px; background:#D8DAE2; transition:.2s ease; cursor:pointer; border:none; padding:0; }
+  .dot-btn.active{ width:22px; background:#2A4CFF; }
+
+  /* ===== Мокап светлого окна браузера / телефона для карточек кейсов =====
+     Аккуратная, проверенная структура: узкая карточка, мокап сверху
+     фиксированной высоты 300px, текст снизу. */
+  .browser-mock{ background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 20px 40px -14px rgba(0,0,0,.45); }
+  .browser-chrome{ background:#F1F3F4; border-bottom:1px solid #E1E3E6; display:flex; align-items:center; gap:6px; padding:8px 10px; }
+  .browser-navbtn{ width:20px; height:20px; display:flex; align-items:center; justify-content:center; color:#9AA0A6; flex-shrink:0; }
+  .browser-addr{ flex:1; min-width:0; background:#fff; border:1px solid #E1E3E6; border-radius:9999px; padding:4px 10px; display:flex; align-items:center; gap:5px; }
+  .browser-addr span{ font-family:'IBM Plex Mono', ui-monospace, monospace; font-size:10.5px; color:#5F6368; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .browser-shot-wrap{ background:#F8F9FA; display:flex; align-items:center; justify-content:center; padding:14px; height:300px; }
+  .browser-shot-wrap img{ max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; border-radius:10px; box-shadow:0 10px 28px -8px rgba(0,0,0,.28); }
+  .shot-badge{ position:absolute; bottom:10px; right:10px; }
+
+  /* "Объёмные" 3D-иконки: градиентная заливка + блик + тени */
+  .icon3d{
+    position:relative; overflow:hidden; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(145deg, var(--c1), var(--c2));
+    box-shadow: 0 14px 26px -10px var(--sh, rgba(42,76,255,.55)),
+                inset 0 2px 3px rgba(255,255,255,.55),
+                inset 0 -10px 16px rgba(0,0,0,.18);
   }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    overflow-x:hidden;
-    line-height:1.55;
+  .icon3d::after{
+    content:""; position:absolute; top:-35%; left:-15%; width:85%; height:75%;
+    background:radial-gradient(circle, rgba(255,255,255,.65), transparent 70%);
+    transform:rotate(-18deg); pointer-events:none;
   }
-  h1,h2,h3,h4{font-family:'Space Grotesk', 'Inter', sans-serif;}
-  a{color:inherit; text-decoration:none;}
-  img{max-width:100%; display:block;}
-  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
-  .ic{width:1em; height:1em; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; vertical-align:-0.15em;}
 
-  /* Background */
-  .blobs{position:fixed; inset:0; z-index:-2; overflow:hidden; background: var(--bg);}
-  .blob{position:absolute; border-radius:50%; filter: blur(100px); opacity:0.22; animation: float 22s ease-in-out infinite;}
-  .blob1{width:520px; height:520px; background: #16a34a; top:-180px; right:-120px;}
-  .blob2{width:420px; height:420px; background: #2dd4bf; top:280px; left:-160px; animation-delay:5s;}
-  .blob3{width:460px; height:460px; background: #65a30d; bottom:-180px; right:10%; animation-delay:10s;}
-  @keyframes float{
-    0%,100%{ transform: translate(0,0) scale(1); }
-    50%{ transform: translate(30px,-30px) scale(1.06); }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
   }
-  .scanlines{position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:0.5;
-    background-image: repeating-linear-gradient(rgba(74,222,128,0.025) 0px, rgba(74,222,128,0.025) 1px, transparent 1px, transparent 3px);}
-
-  .reveal{opacity:0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease;}
-  .reveal.in{opacity:1; transform: translateY(0);}
-
-  /* Header */
-  header{position:sticky; top:0; z-index:50; background: rgba(5,10,6,0.82); backdrop-filter: blur(14px); border-bottom:1px solid var(--line);}
-  header .wrap{display:flex; align-items:center; justify-content:space-between; height:78px;}
-  .logo{font-weight:700; font-size:1.1rem; display:flex; align-items:center; gap:10px; font-family:'Space Grotesk',sans-serif;}
-  .logo .dot{width:11px; height:11px; border-radius:50%; background: var(--grad); box-shadow: 0 0 12px rgba(74,222,128,0.7);}
-  nav.links{display:none; gap:30px; font-size:0.95rem; color: var(--muted); font-weight:500;}
-  @media(min-width:860px){nav.links{display:flex;}}
-  nav.links a:hover{color: var(--green2);}
-  .btn{
-    display:inline-flex; align-items:center; gap:9px;
-    padding:13px 24px; border-radius:999px; font-weight:600; font-size:0.95rem;
-    border:1px solid transparent; cursor:pointer; transition: all .25s ease; white-space:nowrap;
-  }
-  .btn-grad{background: var(--grad); color:#04170a; box-shadow: 0 8px 24px rgba(34,197,94,0.35);}
-  .btn-grad:hover{box-shadow: 0 12px 40px rgba(74,222,128,0.6); transform: translateY(-2px);}
-  .btn-outline{background: var(--surface); color:var(--ink); border-color: var(--line); box-shadow: var(--shadow);}
-  .btn-outline:hover{border-color: var(--green2); color: var(--green2); transform: translateY(-2px);}
-  .header-cta{display:none;}
-  @media(min-width:860px){.header-cta{display:inline-flex;}}
-  .burger{display:flex; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none;}
-  .burger span{width:24px; height:2px; background:var(--ink); border-radius:2px;}
-  @media(min-width:860px){.burger{display:none;}}
-  .mobile-menu{display:none; flex-direction:column; gap:16px; padding:20px 24px 26px; border-top:1px solid var(--line); background: #050a06;}
-  .mobile-menu.open{display:flex;}
-
-  /* Hero */
-  .hero{padding:64px 0 40px; position:relative;}
-  .hero-grid{display:grid; grid-template-columns: 1fr; gap:56px; align-items:center;}
-  @media(min-width:940px){.hero-grid{grid-template-columns: 1.05fr 0.95fr;}}
-  .eyebrow{display:inline-flex; align-items:center; gap:8px; padding:7px 16px; border-radius:999px; background: rgba(34,197,94,0.14); color: var(--green2); font-size:0.82rem; font-weight:600; font-family:'JetBrains Mono',monospace;}
-  .eyebrow .ic{width:15px; height:15px;}
-  .hero h1{font-size: clamp(2.3rem, 5vw, 3.5rem); font-weight:700; margin:18px 0 8px; line-height:1.1; letter-spacing:-0.01em;}
-  .hero h1 span{background: var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;}
-  .hero .role{font-size:1.18rem; color:var(--muted); margin-bottom:18px; font-weight:600; font-family:'Space Grotesk',sans-serif;}
-  .hero p.desc{color:var(--muted); font-size:1.05rem; max-width:520px; margin-bottom:30px;}
-  .hero-ctas{display:flex; flex-wrap:wrap; gap:14px; margin-bottom:34px;}
-  .pill-row{display:flex; flex-wrap:wrap; gap:10px;}
-  .pill{padding:8px 15px; border-radius:999px; background: var(--surface); border:1px solid var(--line); font-size:0.82rem; font-weight:500; color:var(--muted); box-shadow: var(--shadow);}
-
-  .hero-visual{position:relative; display:flex; justify-content:center;}
-  .photo-card{
-    position:relative; width:100%; max-width:380px; aspect-ratio: 4/4.6; border-radius:28px; overflow:hidden;
-    background: linear-gradient(160deg, #0a1a0e, #03110a); box-shadow: var(--shadow-lg), 0 0 80px rgba(34,197,94,0.28); border:1px solid var(--line);
-  }
-  .photo-card img{width:100%; height:100%; object-fit:cover;}
-  .photo-card svg.placeholder{width:60%; height:60%; margin:20% auto; opacity:0.9;}
-  .float-card{
-    position:absolute; background: rgba(6,12,7,0.9); border:1px solid var(--line); border-radius:16px; padding:14px 18px;
-    box-shadow: var(--shadow-lg); display:flex; align-items:center; gap:12px; animation: bob 5s ease-in-out infinite;
-  }
-  .float-card .ic-badge{width:36px; height:36px; border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;}
-  .float-card .ic-badge .ic{width:18px; height:18px;}
-  .float-card .t1{font-size:0.78rem; color:var(--muted); font-weight:500;}
-  .float-card .t2{font-size:0.92rem; font-weight:700; font-family:'Space Grotesk',sans-serif;}
-  .card-top{top:-14%; left:-14%;}
-  .card-bottom{bottom:-6%; right:-10%; animation-delay:1.6s;}
-  @keyframes bob{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-9px);} }
-  @media(max-width:640px){.float-card{padding:10px 14px;} .card-top{left:-4%;} .card-bottom{right:-4%;}}
-
-  /* Marquee */
-  .marquee-wrap{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background: rgba(74,222,128,0.05); overflow:hidden; padding:13px 0;}
-  .marquee{display:flex; gap:44px; white-space:nowrap; width:max-content; animation: scroll-left 22s linear infinite;}
-  .marquee span{font-family:'JetBrains Mono',monospace; font-weight:500; font-size:0.85rem; color: var(--green2); display:flex; align-items:center; gap:10px;}
-  .marquee span::after{content:"✦"; color: var(--lime); font-size:0.7rem; margin-left:34px;}
-  @keyframes scroll-left{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
-
-  /* Sections */
-  .section{padding:74px 0; position:relative;}
-  .section-head{text-align:center; max-width:640px; margin:0 auto 46px;}
-  .section-head .tag{color: var(--green2); font-weight:600; font-size:0.82rem; letter-spacing:.05em; text-transform:uppercase; font-family:'JetBrains Mono',monospace;}
-  .section-head h2{font-size: clamp(1.75rem, 3.5vw, 2.4rem); font-weight:700; margin-top:10px; letter-spacing:-0.01em;}
-  .section-head p{color:var(--muted); margin-top:14px;}
-
-  /* For whom */
-  .whom-grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:20px;}
-  .whom-card{background: var(--surface); border:1px solid var(--line); border-radius:20px; padding:28px; box-shadow: var(--shadow); transition: all .3s ease;}
-  .whom-card:hover{transform: translateY(-5px); box-shadow: var(--shadow-lg), 0 0 30px rgba(34,197,94,0.12); border-color: rgba(74,222,128,0.4);}
-  .whom-card .ic-badge{width:46px; height:46px; border-radius:13px; display:flex; align-items:center; justify-content:center; margin-bottom:16px;}
-  .whom-card .ic-badge .ic{width:22px; height:22px;}
-  .whom-card h4{font-weight:600; margin-bottom:8px; font-size:1.05rem;}
-  .whom-card p{color:var(--muted); font-size:0.92rem;}
-
-  /* Cards grid (services) */
-  .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(270px,1fr)); gap:20px;}
-  .card{
-    background: var(--surface); border:1px solid var(--line); border-radius:20px; padding:28px; position:relative;
-    transition: all .3s ease; box-shadow: var(--shadow);
-  }
-  .card:hover{transform: translateY(-6px); box-shadow: var(--shadow-lg), 0 0 34px rgba(34,197,94,0.14); border-color: rgba(74,222,128,0.45);}
-  .card.featured{border-color: var(--green); box-shadow: 0 0 34px rgba(34,197,94,0.2);}
-  .card.featured::after{content:"популярно"; position:absolute; top:-12px; right:24px; background:var(--grad); color:#04170a; font-size:0.7rem; font-weight:700; padding:5px 12px; border-radius:999px; text-transform:uppercase;}
-  .ic-badge{width:52px; height:52px; border-radius:15px; display:flex; align-items:center; justify-content:center; margin-bottom:16px;}
-  .ic-badge .ic{width:24px; height:24px;}
-  .card-top{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:9px;}
-  .card h3{font-size:1.14rem; font-weight:600;}
-  .card-price{font-family:'Space Grotesk',sans-serif; font-weight:700; color: var(--green2); font-size:1rem; white-space:nowrap;}
-  .card p{color:var(--muted); font-size:0.93rem;}
-  .card ul.feat{list-style:none; margin:14px 0 4px;}
-  .card ul.feat li{color:var(--muted); font-size:0.85rem; padding:4px 0 4px 20px; position:relative;}
-  .card ul.feat li::before{content:"✓"; position:absolute; left:0; color: var(--green2); font-weight:800; font-size:0.75rem;}
-  .card-actions{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:16px; flex-wrap:wrap;}
-  .card-actions details{margin-top:0;}
-  .btn-sm{padding:9px 18px; font-size:0.85rem;}
-  .badge-1{background: rgba(34,197,94,0.14); color: #6ee7a0;}
-  .badge-2{background: rgba(45,212,191,0.14); color: #5eead4;}
-  .badge-3{background: rgba(163,230,53,0.14); color: #bef264;}
-
-  /* Show example */
-  .card details{margin-top:16px;}
-  .card summary{
-    list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:7px;
-    font-size:0.85rem; font-weight:600; color: var(--green2); font-family:'Space Grotesk',sans-serif;
-    padding:8px 14px; border-radius:999px; border:1px solid var(--line); background: rgba(74,222,128,0.06);
-    transition: all .25s ease; user-select:none;
-  }
-  .card summary::-webkit-details-marker{display:none;}
-  .card summary:hover{border-color: rgba(74,222,128,0.5); background: rgba(74,222,128,0.12);}
-  .card summary::after{content:"▾"; font-size:0.7rem; transition: transform .25s ease;}
-  .card details[open] summary::after{transform: rotate(180deg);}
-  .card details[open] summary{margin-bottom:14px;}
-
-  .mock{border:1px solid rgba(74,222,128,0.4); border-radius:12px; overflow:hidden; background:#0b1a10;}
-  .mock-bar{display:flex; gap:5px; padding:8px 10px; background: rgba(255,255,255,0.06); border-bottom:1px solid rgba(74,222,128,0.3);}
-  .mock-bar span{width:7px; height:7px; border-radius:50%; background: rgba(255,255,255,0.25);}
-  .mock-bar span:nth-child(1){background:#f87171;} .mock-bar span:nth-child(2){background:#fbbf24;} .mock-bar span:nth-child(3){background:#4ade80;}
-  .mock-site .mock-body{padding:12px;}
-  .mock-nav{height:9px; width:40%; border-radius:3px; background: rgba(74,222,128,0.65); margin-bottom:10px;}
-  .mock-hero{height:30px; border-radius:6px; background: var(--grad2); opacity:0.9; margin-bottom:10px;}
-  .mock-grid{display:grid; grid-template-columns: repeat(3,1fr); gap:7px;}
-  .mock-grid div{height:22px; border-radius:5px; background: rgba(74,222,128,0.22); border:1px solid rgba(74,222,128,0.3);}
-  .mock-msgs{padding:12px; display:flex; flex-direction:column; gap:8px;}
-  .mock-msgs .msg{font-size:0.74rem; padding:7px 11px; border-radius:10px; max-width:80%; line-height:1.35;}
-  .mock-msgs .bot{background: rgba(74,222,128,0.22); color:#d7fbe3; align-self:flex-start; border-bottom-left-radius:2px;}
-  .mock-msgs .user{background: rgba(255,255,255,0.14); color:#f1f6f2; align-self:flex-end; border-bottom-right-radius:2px;}
-  .mock-app{padding:12px; display:flex; flex-direction:column; gap:8px;}
-  .mock-app .row{display:flex; align-items:center; gap:9px; padding:8px 10px; border-radius:8px; background: rgba(255,255,255,0.08); border:1px solid rgba(74,222,128,0.2);}
-  .mock-app .dot{width:18px; height:18px; border-radius:6px; background: var(--grad3); flex-shrink:0;}
-  .mock-app .bar{height:7px; border-radius:3px; background: rgba(255,255,255,0.28); flex:1;}
-  .mock-caption{font-size:0.86rem; font-weight:600; color: #eafff0; padding:12px; border-top:1px solid rgba(74,222,128,0.3); background: rgba(74,222,128,0.08); font-family:'Space Grotesk',sans-serif; line-height:1.4;}
-
-  .subhead{font-weight:700; font-size:1.1rem; margin: 44px 0 20px; display:flex; align-items:center; gap:10px; font-family:'Space Grotesk',sans-serif;}
-  .subhead::before{content:""; width:6px; height:22px; border-radius:4px; background: var(--grad); display:inline-block;}
-
-  /* Process */
-  .steps{display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:20px;}
-  .step{background: var(--surface); border:1px solid var(--line); border-radius:18px; padding:26px; box-shadow: var(--shadow); position:relative;}
-  .step .num{
-    width:38px; height:38px; border-radius:11px; background: var(--grad); display:flex; align-items:center; justify-content:center;
-    color:#04170a; font-weight:700; font-family:'Space Grotesk',sans-serif; font-size:1rem; margin-bottom:16px;
-    box-shadow: 0 0 18px rgba(74,222,128,0.4);
-  }
-  .step h4{font-weight:600; margin-bottom:8px; font-size:1rem;}
-  .step p{color:var(--muted); font-size:0.88rem;}
-
-  /* Cases */
-  .case-grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap:22px;}
-  .case-card{background: var(--surface); border:1px solid var(--line); border-radius:22px; padding:30px; box-shadow: var(--shadow); transition: all .3s ease;}
-  .case-card:hover{transform: translateY(-5px); box-shadow: var(--shadow-lg), 0 0 32px rgba(34,197,94,0.14); border-color: rgba(74,222,128,0.4);}
-  .case-tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px;}
-  .case-tag{font-family:'JetBrains Mono',monospace; font-size:0.68rem; font-weight:600; letter-spacing:.03em; padding:5px 10px; border-radius:999px; background: rgba(74,222,128,0.14); color: var(--green2);}
-  .case-tag.alt{background: rgba(163,230,53,0.14); color: var(--lime);}
-  .case-card h3{font-size:1.25rem; font-weight:700; margin-bottom:10px; font-family:'Space Grotesk',sans-serif;}
-  .case-card p{color:var(--muted); font-size:0.93rem; margin-bottom:18px;}
-  .case-facts{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px;}
-  .case-facts span{font-size:0.78rem; color:#a9d6b6; background: rgba(255,255,255,0.04); border:1px solid var(--line); padding:6px 11px; border-radius:8px;}
-
-  /* Contact */
-  .contact-section{padding:80px 0;}
-  .contact-card{
-    background: linear-gradient(135deg, #03170c, #062a16 55%, #021f10);
-    border:1px solid var(--line); border-radius:32px; padding:64px 30px; text-align:center; position:relative; overflow:hidden;
-  }
-  .contact-card::before{content:""; position:absolute; width:400px; height:400px; background: var(--grad); filter:blur(110px); opacity:0.3; top:-120px; right:-80px; border-radius:50%;}
-  .contact-card h2{color:#fff; font-size: clamp(1.7rem,3.5vw,2.4rem); font-weight:700; margin-bottom:14px; position:relative;}
-  .contact-card p{color:#9fcdb0; max-width:520px; margin:0 auto 36px; position:relative;}
-  .contact-btns{display:flex; flex-wrap:wrap; gap:16px; justify-content:center; position:relative;}
-  .glow-btn{
-    display:flex; align-items:center; gap:12px; padding:16px 28px; border-radius:16px;
-    font-weight:600; font-size:1rem; border:1px solid rgba(74,222,128,0.25); background: rgba(255,255,255,0.05); color:#eafbee;
-    transition: all .3s ease; min-width:210px; justify-content:center; font-family:'Space Grotesk',sans-serif;
-    animation: pulse-glow 3.2s ease-in-out infinite;
-  }
-  .glow-btn .ic{width:20px; height:20px;}
-  .glow-btn.tg:hover{border-color:#34aadc; box-shadow: 0 0 32px rgba(52,170,220,0.6); transform: translateY(-3px) scale(1.03);}
-  .glow-btn.wa:hover{border-color:#25D366; box-shadow: 0 0 32px rgba(37,211,102,0.7); transform: translateY(-3px) scale(1.03);}
-  .glow-btn.ph:hover{border-color: var(--lime); box-shadow: 0 0 32px rgba(163,230,53,0.6); transform: translateY(-3px) scale(1.03);}
-  .glow-btn.em:hover{border-color: var(--teal); box-shadow: 0 0 32px rgba(45,212,191,0.6); transform: translateY(-3px) scale(1.03);}
-  .glow-btn.tg{animation-delay:0s;} .glow-btn.wa{animation-delay:1s;} .glow-btn.ph{animation-delay:2s;} .glow-btn.em{animation-delay:0.5s;}
-  @keyframes pulse-glow{ 0%,100%{ box-shadow: 0 0 0 rgba(74,222,128,0);} 50%{ box-shadow: 0 0 18px rgba(74,222,128,0.25);} }
-
-  footer{padding:34px 0; text-align:center; color:var(--muted); font-size:0.85rem; border-top:1px solid var(--line);}
-  footer .fname{color:var(--ink); font-weight:700;}
 </style>
 </head>
-<body>
+<body class="font-body text-body bg-canvas antialiased">
 
-<svg style="display:none" aria-hidden="true">
-  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/><path d="M19 3.5l.7 1.9 1.9.7-1.9.7-.7 1.9-.7-1.9-1.9-.7 1.9-.7.7-1.9z"/></symbol>
-  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91-.79-.79-2.08-.8-2.91-.09z"/><path d="M12 15c-3 0-5-2.5-5-6 0-4 3-8 7-8 3 0 6 3 6 6 0 4-4 8-8 8z"/><circle cx="14.5" cy="9.5" r="1.5"/></symbol>
-  <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18"/><path d="M7 14h4"/></symbol>
-  <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.2 0-1 .8-1.5 1.8-1.5H17a4 4 0 004-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="10.5" r="1.2"/><circle cx="11" cy="7.5" r="1.2"/><circle cx="15.5" cy="9" r="1.2"/></symbol>
-  <symbol id="i-news" viewBox="0 0 24 24"><rect x="3" y="4" width="14" height="16" rx="1.5"/><path d="M17 8h4v10a2 2 0 01-2 2h-2"/><path d="M6.5 8h7M6.5 11.5h7M6.5 15h4"/></symbol>
-  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 8h12l1 12H5L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></symbol>
-  <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M9 4h4v2.2a1.8 1.8 0 003.6 0V4H20v4.2a1.8 1.8 0 000 3.6V16h-4.2a1.8 1.8 0 00-3.6 0V20H8v-4h-2.2a1.8 1.8 0 010-3.6H8V9H4V5h5V4z"/></symbol>
-  <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M4 12h4l2 3h4l2-3h4"/><path d="M5.5 5h13l2 7v6a1.5 1.5 0 01-1.5 1.5h-14A1.5 1.5 0 013.5 18v-6l2-7z"/></symbol>
-  <symbol id="i-bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 8V4M9 4h6"/><circle cx="9" cy="13.5" r="1.3"/><circle cx="15" cy="13.5" r="1.3"/><path d="M9 17h6"/></symbol>
-  <symbol id="i-magic" viewBox="0 0 24 24"><path d="M4 20L18 6"/><path d="M15 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"/><path d="M20 12l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6.6-1.4z"/></symbol>
-  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></symbol>
-  <symbol id="i-device" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></symbol>
-  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 00-3 3 3 3 0 00-1 5.8A3.5 3.5 0 007 19a3 3 0 002.9-2.3M9 4a3 3 0 013 3v9a3 3 0 01-3 3M9 4v15"/><path d="M15 4a3 3 0 013 3 3 3 0 011 5.8A3.5 3.5 0 0117 19a3 3 0 01-2.9-2.3M15 4a3 3 0 00-3 3M15 4v15"/></symbol>
-  <symbol id="i-handshake" viewBox="0 0 24 24"><path d="M2 12l4-4 4 3 3-3 2 2"/><path d="M11 10l3.5 3.5a1.5 1.5 0 002.1-2.1L13 8"/><path d="M15 8l1.5-1.5a1.5 1.5 0 012.1 2.1L17 10l2 2a1.5 1.5 0 01-2.1 2.1"/><path d="M6 8l-4 4 3 3"/></symbol>
-  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
-  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1.2-5A8 8 0 1121 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 006 6l1.5-2 4.5 1.5v3a2 2 0 01-2.2 2A18 18 0 014.5 5.2 2 2 0 016.5 3z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
-  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></symbol>
-  <symbol id="i-team" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 5.5a3 3 0 010 6"/><path d="M18.5 14.3c2 .6 3 2.4 3 5.7"/></symbol>
-  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><path d="M3 12h18"/></symbol>
-  <symbol id="i-portrait" viewBox="0 0 100 100"><defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a97cff"/><stop offset="1" stop-color="#ff7cbd"/></linearGradient></defs><path fill="url(#pg)" opacity="0.85" d="M50 8c14 0 22 11 22 24 0 8-3 14-7 18 12 5 20 15 22 30 .5 4-2 7-6 7H19c-4 0-6.5-3-6-7 2-15 10-25 22-30-4-4-7-10-7-18C28 19 36 8 50 8z"/></symbol>
-</svg>
+<!-- ============ HEADER ============ -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 h-[72px] flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-center gap-2.5 shrink-0">
+      <span class="w-8 h-8 rounded-lg bg-ink flex items-center justify-center">
+        <span class="text-accentlite font-mono font-semibold text-sm">DC</span>
+      </span>
+      <span class="font-display font-semibold text-ink text-[17px] leading-none hidden xs:block">Дарья Чуручанова</span>
+    </a>
 
-<div class="blobs">
-  <div class="blob blob1"></div>
-  <div class="blob blob2"></div>
-  <div class="blob blob3"></div>
-</div>
-<div class="scanlines"></div>
-
-<header>
-  <div class="wrap">
-    <div class="logo"><span class="dot"></span> Дарья Чуручанова</div>
-    <nav class="links">
-      <a href="#services">Услуги и цены</a>
-      <a href="#cases">Кейсы</a>
-      <a href="#process">Как работаю</a>
-      <a href="#contact">Контакты</a>
+    <nav class="hidden lg:flex items-center gap-4 xl:gap-6 text-[13.5px] font-semibold text-body whitespace-nowrap">
+      <a href="#services" class="hover:text-accent transition-colors">Услуги и цены</a>
+      <a href="#portfolio" class="hover:text-accent transition-colors">Реальные проекты</a>
+      <a href="#trust" class="hover:text-accent transition-colors">Надёжность</a>
+      <a href="#process" class="hover:text-accent transition-colors">Как работаю</a>
+      <a href="#contact" class="hover:text-accent transition-colors">Контакты</a>
     </nav>
-    <a href="#contact" class="btn btn-grad header-cta">Обсудить проект</a>
-    <button class="burger" id="burgerBtn" aria-label="Меню"><span></span><span></span><span></span></button>
+
+    <div class="hidden xl:flex items-center gap-2 shrink-0">
+      <a href="https://t.me/+79123232687" target="_blank" rel="noopener" aria-label="Написать в Telegram" class="w-11 h-11 rounded-full flex items-center justify-center bg-[#229ED9]/12 text-[#229ED9] hover:bg-[#229ED9] hover:text-white transition-colors">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-2 1.93c-.23.23-.42.42-.82.42z"/></svg>
+      </a>
+      <a href="https://wa.me/79123232687" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" class="w-11 h-11 rounded-full flex items-center justify-center bg-[#25D366]/12 text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2.03C6.58 2.03 2.13 6.45 2.13 11.92c0 1.77.47 3.44 1.28 4.88L2 22l5.35-1.4a9.87 9.87 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.42 9.9-9.89 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.9-7-2.9zm0 18.06h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.13 8.13 0 0 1-1.25-4.32c0-4.51 3.68-8.19 8.2-8.19 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.51-3.68 8.17-8.16 8.17z"/><path d="M16.75 13.96c-.31-.16-1.84-.91-2.12-1.01-.28-.1-.49-.16-.7.16-.21.31-.8 1.01-.98 1.22-.18.21-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.53-.92-.82-1.53-1.83-1.71-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.02-.55-.08-.16-.7-1.68-.96-2.3-.25-.6-.51-.52-.7-.53-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.39-.28.31-1.09 1.07-1.09 2.6 0 1.53 1.12 3.01 1.27 3.22.16.21 2.2 3.36 5.33 4.71.74.32 1.32.51 1.77.66.75.24 1.42.2 1.96.12.6-.09 1.84-.75 2.1-1.48.26-.72.26-1.34.18-1.47-.08-.13-.28-.21-.59-.36z"/></svg>
+      </a>
+    </div>
+
+    <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-accentdeep text-white text-[14.5px] font-semibold px-5 py-2.5 rounded-full shadow-liftup transition-colors">
+      Обсудить проект
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <button id="menuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-line text-ink" aria-label="Меню">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
   </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#services">Услуги и цены</a>
-    <a href="#cases">Кейсы</a>
-    <a href="#process">Как работаю</a>
-    <a href="#contact">Контакты</a>
+
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-line bg-white px-5 py-4 flex flex-col gap-4 text-[16px] font-semibold text-body">
+    <div class="flex items-center gap-2 pb-1">
+      <a href="https://t.me/+79123232687" target="_blank" rel="noopener" aria-label="Написать в Telegram" class="w-11 h-11 rounded-full flex items-center justify-center bg-[#229ED9]/12 text-[#229ED9]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.05-2 1.93c-.23.23-.42.42-.82.42z"/></svg>
+      </a>
+      <a href="https://wa.me/79123232687" target="_blank" rel="noopener" aria-label="Написать в WhatsApp" class="w-11 h-11 rounded-full flex items-center justify-center bg-[#25D366]/12 text-[#25D366]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2.03C6.58 2.03 2.13 6.45 2.13 11.92c0 1.77.47 3.44 1.28 4.88L2 22l5.35-1.4a9.87 9.87 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.42 9.9-9.89 0-2.64-1.03-5.13-2.9-7-1.87-1.87-4.36-2.9-7-2.9zm0 18.06h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.13 8.13 0 0 1-1.25-4.32c0-4.51 3.68-8.19 8.2-8.19 2.19 0 4.25.85 5.8 2.4a8.14 8.14 0 0 1 2.4 5.8c0 4.51-3.68 8.17-8.16 8.17z"/><path d="M16.75 13.96c-.31-.16-1.84-.91-2.12-1.01-.28-.1-.49-.16-.7.16-.21.31-.8 1.01-.98 1.22-.18.21-.36.23-.67.08-.31-.16-1.3-.48-2.48-1.53-.92-.82-1.53-1.83-1.71-2.14-.18-.31-.02-.48.14-.63.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.02-.55-.08-.16-.7-1.68-.96-2.3-.25-.6-.51-.52-.7-.53-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.39-.28.31-1.09 1.07-1.09 2.6 0 1.53 1.12 3.01 1.27 3.22.16.21 2.2 3.36 5.33 4.71.74.32 1.32.51 1.77.66.75.24 1.42.2 1.96.12.6-.09 1.84-.75 2.1-1.48.26-.72.26-1.34.18-1.47-.08-.13-.28-.21-.59-.36z"/></svg>
+      </a>
+      <span class="text-[13.5px] text-faint font-medium">Быстрая связь</span>
+    </div>
+    <a href="#services" class="mobile-link">Услуги и цены</a>
+    <a href="#portfolio" class="mobile-link">Реальные проекты</a>
+    <a href="#trust" class="mobile-link">Надёжность</a>
+    <a href="#process" class="mobile-link">Как работаю</a>
+    <a href="#contact" class="mobile-link text-accent">Контакты</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap hero-grid">
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="glow-field">
+  <div class="glow-blob w-[560px] h-[560px] -top-40 -left-52" style="background:radial-gradient(circle,#2A4CFF,transparent 70%)"></div>
+  <div class="glow-blob w-[420px] h-[420px] top-10 right-0" style="background:radial-gradient(circle,#5FD4FF,transparent 70%)"></div>
+
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 pt-14 sm:pt-20 pb-16 sm:pb-24 grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center relative z-10">
+
     <div>
-      <span class="eyebrow"><svg class="ic"><use href="#i-sparkle"/></svg> Сайты · Боты · AI-агенты</span>
-      <h1>Дарья Чуручанова —<br><span>разработка с ИИ</span></h1>
-      <div class="role">Сайты, чат-боты и AI-агенты под ключ</div>
-      <p class="desc">Помогаю бизнесу и специалистам запускать современные сайты, Telegram-ботов и AI-агентов, которые приносят заявки и продажи 24/7 — без лишней технической головной боли для вас.</p>
-      <div class="hero-ctas">
-        <a href="#contact" class="btn btn-grad">Обсудить проект →</a>
-        <a href="#services" class="btn btn-outline">Что я делаю</a>
+      <div class="inline-flex items-center gap-2.5 bg-chip text-accentdeep text-[16px] font-bold px-4 py-2 rounded-full mb-6">
+        <span class="w-2 h-2 rounded-full bg-accent"></span>
+        <span class="font-mono">сайты · telegram-боты · ai-агенты</span>
       </div>
-      <div class="pill-row">
-        <span class="pill">Лендинги</span>
-        <span class="pill">Сайты-визитки</span>
-        <span class="pill">Интернет-магазины</span>
-        <span class="pill">Telegram-боты</span>
-        <span class="pill">AI-агенты</span>
-        <span class="pill">Mini App и приложения</span>
+
+      <h1 class="font-display font-semibold text-ink text-[38px] sm:text-[54px] leading-[1.06] mb-6">
+        Разработка <span class="text-accent">сайтов</span> и <span class="text-accent">AI-агентов</span>, которые сами закрывают заявки
+      </h1>
+
+      <p class="text-[19px] sm:text-[20px] font-medium text-ink leading-[1.75] max-w-[46ch] mb-8">
+        Помогаю бизнесу и специалистам запускать сайты, Telegram-ботов и AI-агентов, которые приносят заявки и продажи 24/7 — без лишней технической головной боли для вас.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 mb-8">
+        <a href="#contact" class="inline-flex items-center gap-2 bg-accent hover:bg-accentdeep text-white font-semibold px-6 py-3.5 rounded-full shadow-liftup transition-colors">
+          Обсудить проект
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#portfolio" class="inline-flex items-center gap-2 text-ink font-semibold px-6 py-3.5 rounded-full border-2 border-line bg-white hover:border-accent transition-colors">
+          Смотреть проекты
+        </a>
+      </div>
+
+      <div class="flex flex-wrap gap-x-7 gap-y-3 text-[14.5px] font-semibold text-ink mb-9">
+        <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#2A4CFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Официальный договор</span>
+        <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#2A4CFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Фиксированная смета</span>
+        <span class="flex items-center gap-1.5"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="#2A4CFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Гарантия 14 дней</span>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-card max-w-[440px]" style="background:#1E1E1E">
+        <div class="flex items-center gap-1.5 px-4 py-2.5" style="background:#2D2D2D">
+          <span class="browser-dot" style="background:#FF5F56"></span>
+          <span class="browser-dot" style="background:#FFBD2E"></span>
+          <span class="browser-dot" style="background:#27C93F"></span>
+          <span class="ml-3 font-mono text-[11.5px] text-white/40">agent.js</span>
+        </div>
+        <div class="px-5 py-5 font-mono text-[12.5px] sm:text-[13px] leading-[1.85]">
+<span style="color:#569CD6">const</span> <span style="color:#9CDCFE">проект</span> = {<br>
+&nbsp;&nbsp;<span style="color:#9CDCFE">тип</span>: <span style="color:#CE9178">"AI-агент"</span>,<br>
+&nbsp;&nbsp;<span style="color:#9CDCFE">работает</span>: <span style="color:#CE9178">"24/7"</span>,<br>
+&nbsp;&nbsp;<span style="color:#9CDCFE">отвечает_клиенту</span>: <span style="color:#CE9178">"мгновенно"</span>,<br>
+&nbsp;&nbsp;<span style="color:#9CDCFE">считает_стоимость</span>: <span style="color:#569CD6">true</span><br>
+};<span class="code-cursor"></span><br>
+<span style="color:#6A9955">// первая консультация — бесплатно</span>
+        </div>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="float-card card-top">
-        <div class="ic-badge" style="background:rgba(163,230,53,0.16);color:#bef264;"><svg class="ic"><use href="#i-bolt"/></svg></div>
-        <div><div class="t1">Запуск проекта</div><div class="t2">от нескольких дней</div></div>
+
+    <div class="relative">
+      <div class="glow-blob w-[380px] h-[380px] -top-10 -right-10" style="background:radial-gradient(circle,#2A4CFF,transparent 70%); opacity:.25"></div>
+      <div class="relative rounded-[28px] overflow-hidden shadow-cardhov ring-1 ring-black/5 max-w-[420px] mx-auto">
+        <img src="images/darya.jpg" alt="Дарья Чуручанова" class="w-full h-full object-cover aspect-[3/4]">
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent h-28"></div>
+        <div class="absolute left-5 right-5 bottom-5 flex items-center justify-between">
+          <div>
+            <p class="text-white font-display font-semibold text-[17px] leading-none">Дарья Чуручанова</p>
+            <p class="text-white/70 text-[13px] mt-1">Разработчик сайтов и AI-агентов</p>
+          </div>
+          <span class="w-3 h-3 rounded-full bg-emerald-400 ring-4 ring-emerald-400/25 shrink-0"></span>
+        </div>
       </div>
-      <div class="photo-card">
-        <img src="darya.jpg" alt="Дарья Чуручанова">
-      </div>
-      <div class="float-card card-bottom">
-        <div class="ic-badge" style="background:rgba(45,212,191,0.16);color:#5eead4;"><svg class="ic"><use href="#i-bot"/></svg></div>
-        <div><div class="t1">AI-бот</div><div class="t2">на связи 24/7</div></div>
+      <div class="grid grid-cols-2 gap-3 max-w-[420px] mx-auto mt-4">
+        <div class="bg-white border border-line rounded-xl px-4 py-3 shadow-card">
+          <div class="font-display font-bold text-accent text-xl">от 13 000 ₽</div>
+          <div class="text-[13px] text-faint font-semibold">Лендинг под ключ</div>
+        </div>
+        <div class="bg-white border border-line rounded-xl px-4 py-3 shadow-card">
+          <div class="font-display font-bold text-accent text-xl">от 7 000 ₽</div>
+          <div class="text-[13px] text-faint font-semibold">Бот для заявок</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="marquee-wrap">
-  <div class="marquee">
-    <span>Лендинг от 13 000 ₽</span><span>Бот для заявок от 7 000 ₽</span><span>Визитка от 15 000 ₽</span><span>AI-бот от 15 000 ₽</span><span>Первая консультация бесплатно</span>
-    <span>Лендинг от 13 000 ₽</span><span>Бот для заявок от 7 000 ₽</span><span>Визитка от 15 000 ₽</span><span>AI-бот от 15 000 ₽</span><span>Первая консультация бесплатно</span>
-  </div>
-</div>
-
-<section class="section reveal" id="whom">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="tag">Для кого</div>
-      <h2>Кому я помогаю</h2>
-    </div>
-    <div class="whom-grid">
-      <div class="whom-card">
-        <div class="ic-badge badge-1"><svg class="ic"><use href="#i-user"/></svg></div>
-        <h4>Предприниматель без сайта</h4>
-        <p>Нужно представить бизнес в интернете и начать получать заявки, не разбираясь в технических деталях.</p>
+<!-- ============ FOR WHOM ============ -->
+<section class="border-t border-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+    <p class="tag-chip text-accent text-[12.5px] font-semibold uppercase mb-3">Для кого</p>
+    <h2 class="font-display font-semibold text-ink text-[30px] sm:text-[36px] mb-12">Кому я помогаю</h2>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl p-7 shadow-card lift-hover">
+        <div class="icon3d w-16 h-16 rounded-2xl mb-6" style="--c1:#6C8CFF; --c2:#2A4CFF; --sh:rgba(42,76,255,.5)">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M12 2 3 8v13h6v-7h6v7h6V8z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-ink text-[19px] mb-2.5">Предприниматель без сайта</h3>
+        <p class="text-[16px] leading-relaxed text-body">Нужно представить бизнес в интернете и начать получать заявки, не разбираясь в технических деталях.</p>
       </div>
-      <div class="whom-card">
-        <div class="ic-badge badge-2"><svg class="ic"><use href="#i-briefcase"/></svg></div>
-        <h4>Малый бизнес без времени на маркетинг</h4>
-        <p>Нужен бот или AI-агент, который сам отвечает клиентам и разгружает вас от рутины.</p>
+      <div class="bg-white rounded-2xl p-7 shadow-card lift-hover">
+        <div class="icon3d w-16 h-16 rounded-2xl mb-6" style="--c1:#4FE0FF; --c2:#0EA5E9; --sh:rgba(14,165,233,.5)">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><rect x="4" y="8" width="16" height="12" rx="3"/><rect x="10" y="4" width="4" height="4" rx="1"/><circle cx="9" cy="14.5" r="1.6" fill="#0EA5E9"/><circle cx="15" cy="14.5" r="1.6" fill="#0EA5E9"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-ink text-[19px] mb-2.5">Малый бизнес без времени</h3>
+        <p class="text-[16px] leading-relaxed text-body">Нужен бот или AI-агент, который сам отвечает клиентам и разгружает вас от рутины.</p>
       </div>
-      <div class="whom-card">
-        <div class="ic-badge badge-3"><svg class="ic"><use href="#i-team"/></svg></div>
-        <h4>Специалист или фрилансер</h4>
-        <p>Нужна визитка или портфолио, которые повышают доверие клиентов и помогают закрывать сделки.</p>
+      <div class="bg-white rounded-2xl p-7 shadow-card lift-hover">
+        <div class="icon3d w-16 h-16 rounded-2xl mb-6" style="--c1:#4FE9CE; --c2:#0FB8A6; --sh:rgba(15,184,166,.5)">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.2-4.5 4.4-7 8-7s6.8 2.5 8 7Z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-ink text-[19px] mb-2.5">Специалист или фрилансер</h3>
+        <p class="text-[16px] leading-relaxed text-body">Нужна визитка или портфолио, которые повышают доверие клиентов и помогают закрывать сделки.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section reveal" id="services">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="tag">Услуги и цены</div>
-      <h2>Сайты, боты, AI-агенты и приложения для вашего дела</h2>
-      <p>Подбираю формат под задачу — от простого лендинга до умного AI-агента или мини-приложения в Telegram. Цены ориентировочные, точная стоимость — после короткого обсуждения задачи.</p>
+<!-- ============ SERVICES — шахматный порядок сайт/бот, крупный текст ============ -->
+<section id="services" class="border-t border-line glow-field">
+  <div class="glow-blob w-[500px] h-[500px] top-1/3 -right-40" style="background:radial-gradient(circle,#5FD4FF,transparent 70%); opacity:.22"></div>
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20 relative z-10">
+    <p class="tag-chip text-accent text-[12.5px] font-semibold uppercase mb-3">Услуги и цены</p>
+    <h2 class="font-display font-semibold text-ink text-[30px] sm:text-[36px] mb-4 max-w-[24ch]">Сайты, боты, AI-агенты и приложения для вашего дела</h2>
+    <p class="text-[16px] text-body max-w-[62ch] mb-8 leading-relaxed">Подбираю формат под задачу — от простого лендинга до умного AI-агента или мини-приложения в Telegram. Цены ориентировочные, точная стоимость — после короткого обсуждения задачи.</p>
+
+    <div id="serviceTabs" class="flex flex-wrap gap-2.5 mb-7">
+      <button data-filter="all" class="filter-btn active">Все услуги</button>
+      <button data-filter="sites" class="filter-btn">Сайты</button>
+      <button data-filter="botsai" class="filter-btn">Боты и AI-агенты</button>
+      <button data-filter="apps" class="filter-btn">Приложения</button>
     </div>
 
-    <div class="subhead">Сайты</div>
-    <div class="grid">
-      <div class="card"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-rocket"/></svg></div>
-        <div class="card-top"><h3>Лендинг</h3><span class="card-price">от 13 000 ₽</span></div>
-        <p>Одностраничный сайт под продажу одного товара или услуги. Чёткая структура и призывы к действию — заточен на заявки и продажи.</p>
-        <ul class="feat"><li>Адаптивная вёрстка</li><li>Форма заявок</li><li>Базовое SEO</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-site"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-body"><div class="mock-nav"></div><div class="mock-hero"></div><div class="mock-grid"><div></div><div></div><div></div></div></div>
-              <div class="mock-caption">Пример структуры: оффер → преимущества → форма заявки</div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-      <div class="card"><div class="ic-badge badge-2"><svg class="ic"><use href="#i-card"/></svg></div>
-        <div class="card-top"><h3>Визитка</h3><span class="card-price">от 15 000 ₽</span></div>
-        <p>Компактный сайт до 5 страниц: главная, услуги, о вас, контакты. Быстро и понятно представляет бизнес в интернете.</p>
-        <ul class="feat"><li>До 5 страниц</li><li>Кнопки мессенджеров</li><li>Карта проезда</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-site"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-body"><div class="mock-nav"></div><div class="mock-hero"></div><div class="mock-grid"><div></div><div></div><div></div></div></div>
-              <div class="mock-caption">Пример: главная, услуги и контакты на одной странице</div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-      <div class="card featured"><div class="ic-badge badge-3"><svg class="ic"><use href="#i-palette"/></svg></div>
-        <div class="card-top"><h3>Портфолио</h3><span class="card-price">от 20 000 ₽</span></div>
-        <p>Имиджевый сайт с акцентом на ваши работы. Каждый проект — отдельный кейс с задачей, процессом и результатом.</p>
-        <ul class="feat"><li>Кейсы с описанием</li><li>Индивидуальный дизайн</li><li>Рост доверия клиентов</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-site"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-body"><div class="mock-nav"></div><div class="mock-hero"></div><div class="mock-grid"><div></div><div></div><div></div></div></div>
-              <div class="mock-caption">Пример: карточки кейсов с описанием и результатом</div></div>
-          </details>
-          <a href="#contact" class="btn btn-grad btn-sm">Обсудить</a>
-        </div></div>
-      <div class="card"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-news"/></svg></div>
-        <div class="card-top"><h3>Информационный сайт</h3><span class="card-price">от 16 000 ₽</span></div>
-        <p>Площадка для статей, новостей и гидов. Удобная навигация и адаптивный дизайн — для блогов и образовательных проектов.</p>
-        <ul class="feat"><li>Лента материалов</li><li>Поиск и рубрики</li><li>Адаптивный дизайн</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-site"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-body"><div class="mock-nav"></div><div class="mock-hero"></div><div class="mock-grid"><div></div><div></div><div></div></div></div>
-              <div class="mock-caption">Пример: лента статей с фильтрами по темам</div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-      <div class="card"><div class="ic-badge badge-2"><svg class="ic"><use href="#i-bag"/></svg></div>
-        <div class="card-top"><h3>Интернет-магазин</h3><span class="card-price">от 25 000 ₽</span></div>
-        <p>Каталог товаров, корзина, фильтры и приём оплаты онлайн. Запускаю продажи быстро и без лишней сложности.</p>
-        <ul class="feat"><li>Корзина и оплата</li><li>Фильтры и поиск</li><li>Мини-CRM</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-site"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-body"><div class="mock-nav"></div><div class="mock-hero"></div><div class="mock-grid"><div></div><div></div><div></div></div></div>
-              <div class="mock-caption">Пример: каталог товаров с корзиной и фильтрами</div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-      <div class="card"><div class="ic-badge badge-3"><svg class="ic"><use href="#i-puzzle"/></svg></div>
-        <div class="card-top"><h3>Универсальный сайт</h3><span class="card-price">от 32 000 ₽</span></div>
-        <p>Комбинация визитки, портфолио и магазина в одном проекте — когда нужно закрыть сразу несколько задач.</p>
-        <ul class="feat"><li>Визитка + каталог + кейсы</li><li>Единый корпоративный сайт</li><li>Приём платежей</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-site"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-body"><div class="mock-nav"></div><div class="mock-hero"></div><div class="mock-grid"><div></div><div></div><div></div></div></div>
-              <div class="mock-caption">Пример: визитка + каталог + кейсы в одном сайте</div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
+    <div class="relative">
+      <button id="servPrev" aria-label="Назад" class="carousel-arrow -left-4 sm:-left-6">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button id="servNext" aria-label="Вперёд" class="carousel-arrow -right-4 sm:-right-6">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <!-- Порядок карточек шахматный: сайт → бот/AI → сайт → бот/AI ...
+           data-cat у карточек не менялся, поэтому табы-фильтры продолжают работать корректно. -->
+      <div id="servTrack" class="card-track flex gap-6 overflow-x-auto no-scrollbar py-2 scroll-px-5">
+
+        <!-- 1. Лендинг (сайт) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="sites">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#6C8CFF; --c2:#2A4CFF; --sh:rgba(42,76,255,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Лендинг</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 13 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Одностраничный сайт под продажу одного товара или услуги — заточен на заявки.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Адаптивная вёрстка</li><li>· Форма заявок</li><li>· Базовое SEO</li>
+          </ul>
+        </div>
+
+        <!-- 2. Бот для сбора заявок (бот) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="botsai">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#4FE0FF; --c2:#0EA5E9; --sh:rgba(14,165,233,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><rect x="4" y="8" width="16" height="11" rx="3.5"/><path d="M12 8V4m-3 0h6" stroke="white" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="13.5" r="1.4" fill="#0F172A"/><circle cx="15" cy="13.5" r="1.4" fill="#0F172A"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Бот для сбора заявок</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 7 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Telegram-бот принимает заявки 24/7 и сразу уведомляет вас.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Работает по сценарию</li><li>· Запись в Google Таблицу</li><li>· Дешевле в эксплуатации</li>
+          </ul>
+        </div>
+
+        <!-- 3. Визитка (сайт) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="sites">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#6C8CFF; --c2:#2A4CFF; --sh:rgba(42,76,255,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="8.5" cy="10.5" r="1.6" fill="#0F172A"/><path d="M6 15.2c.5-1.4 1.6-1.9 2.5-1.9s2 .5 2.5 1.9" stroke="#0F172A" stroke-width="1.4" stroke-linecap="round" fill="none"/><path d="M14 9.5h4M14 13h4" stroke="#0F172A" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Визитка</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 15 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Компактный сайт до 5 страниц: главная, услуги, о вас, контакты.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· До 5 страниц</li><li>· Кнопки мессенджеров</li><li>· Карта проезда</li>
+          </ul>
+        </div>
+
+        <!-- 4. AI-агент (бот/AI) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="botsai">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#4FE0FF; --c2:#0EA5E9; --sh:rgba(14,165,233,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M12 2.5l2.6 5.3 5.9.8-4.3 4.1 1 5.8L12 15.7l-5.2 2.8 1-5.8-4.3-4.1 5.9-.8Z"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">AI-агент</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 30 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Ведёт клиента по всей воронке — от знакомства до оплаты, считает стоимость сам.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Работает 24/7</li><li>· Считает стоимость сам</li><li>· Себестоимость 5–8 $/мес</li>
+          </ul>
+        </div>
+
+        <!-- 5. Портфолио (сайт) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="sites">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#6C8CFF; --c2:#2A4CFF; --sh:rgba(42,76,255,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><rect x="3" y="4" width="18" height="14" rx="2.5"/><path d="M3 15.5l5-4 3 3 5-5 4 3.5" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="8" cy="9" r="1.4" fill="#0F172A"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Портфолио</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 20 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Имиджевый сайт с акцентом на ваши работы. Каждый проект — отдельный кейс.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Кейсы с описанием</li><li>· Индивидуальный дизайн</li><li>· Рост доверия клиентов</li>
+          </ul>
+        </div>
+
+        <!-- 6. AI Telegram-бот [хит] (бот/AI) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] relative rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A; box-shadow:0 0 0 2px #2FE6FF, 0 18px 40px -16px rgba(47,230,255,.4)" data-cat="botsai">
+          <span class="absolute top-5 right-5 tag-chip text-[10px] font-bold uppercase bg-neon text-navy px-2.5 py-1 rounded-full">хит</span>
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#4FE0FF; --c2:#0EA5E9; --sh:rgba(14,165,233,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="white" stroke-width="2" stroke-linecap="round"/><rect x="8" y="8" width="8" height="8" rx="1.5" fill="white"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">AI Telegram-бот</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 15 000 ₽</p>
+          <p class="text-[16px] leading-relaxed mb-4 text-white/85">Чат-бот с ИИ отвечает клиентам круглосуточно, можно подключить заказы и оплату.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Хостинг включён</li><li>· Доп. модули по запросу</li><li>· Расходы 2–4 $/мес</li>
+          </ul>
+        </div>
+
+        <!-- 7. Информационный сайт (сайт) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="sites">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#6C8CFF; --c2:#2A4CFF; --sh:rgba(42,76,255,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M5 3h11l3 3v15H5z"/><path d="M8 9h8M8 12.5h8M8 16h5" stroke="#0F172A" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Информационный сайт</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 16 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Площадка для статей, новостей и гидов — для блогов и образовательных проектов.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Лента материалов</li><li>· Поиск и рубрики</li><li>· Адаптивный дизайн</li>
+          </ul>
+        </div>
+
+        <!-- 8. Mini App для Telegram (приложение) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="apps">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#4FE9CE; --c2:#0FB8A6; --sh:rgba(15,184,166,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><rect x="7" y="2.5" width="10" height="19" rx="2.4"/><rect x="10.2" y="17.6" width="3.6" height="1.4" rx="0.7" fill="#0F172A"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Mini App для Telegram</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 30 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Каталог, запись, личный кабинет прямо внутри Telegram — без установки и переходов.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Работает внутри Telegram</li><li>· Без установки приложения</li><li>· Интеграция с оплатой</li>
+          </ul>
+        </div>
+
+        <!-- 9. Интернет-магазин (сайт) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="sites">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#6C8CFF; --c2:#2A4CFF; --sh:rgba(42,76,255,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/><path d="M3 4h2l2.2 11.2A2 2 0 0 0 9.2 17H17a2 2 0 0 0 2-1.6L20.5 8H6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Интернет-магазин</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 25 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Каталог товаров, корзина и приём оплаты онлайн — без лишней сложности.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Корзина и оплата</li><li>· Фильтры и поиск</li><li>· Мини-CRM</li>
+          </ul>
+        </div>
+
+        <!-- 10. Веб- и мобильное приложение (приложение) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="apps">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#4FE9CE; --c2:#0FB8A6; --sh:rgba(15,184,166,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><rect x="2.5" y="4" width="14" height="10" rx="2"/><rect x="6" y="17" width="9" height="1.6" rx="0.8"/><rect x="16.5" y="8.5" width="5.5" height="9.5" rx="1.6"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Веб- и мобильное приложение</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 55 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Личный кабинет, сервис бронирования или внутренний инструмент для команды.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Индивидуальная логика</li><li>· Личный кабинет</li><li>· Срок зависит от объёма</li>
+          </ul>
+        </div>
+
+        <!-- 11. Универсальный сайт (сайт) -->
+        <div class="serv-card card-slide shrink-0 w-[290px] sm:w-[320px] rounded-2xl p-7 shadow-navycard lift-hover" style="background:#0F172A" data-cat="sites">
+          <div class="icon3d w-16 h-16 rounded-2xl mb-5" style="--c1:#6C8CFF; --c2:#2A4CFF; --sh:rgba(42,76,255,.55)">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 12l9 5 9-5M3 16l9 5 9-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-white text-[21px] mb-1.5">Универсальный сайт</h3>
+          <p class="tabnum font-mono text-neon font-extrabold text-[19px] mb-3" style="text-shadow:0 0 16px rgba(47,230,255,.5)">от 32 000 ₽</p>
+          <p class="text-[16px] leading-relaxed text-white/85 mb-4">Визитка + портфолио + магазин в одном проекте — когда нужно закрыть сразу несколько задач.</p>
+          <ul class="text-[15px] text-white/75 space-y-1.5 font-medium">
+            <li>· Единый корпоративный сайт</li><li>· Приём платежей</li><li>· Кейсы + каталог</li>
+          </ul>
+        </div>
+
+      </div>
+      <div id="servDots" class="flex items-center justify-center gap-2 mt-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO — старая проверенная структура карточек, тёмно-синие карточки, синтетические мокапы ============ -->
+<section id="portfolio" class="border-t border-line bg-white">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+    <p class="tag-chip text-accent text-[12.5px] font-semibold uppercase mb-3">Портфолио</p>
+    <h2 class="font-display font-semibold text-ink text-[30px] sm:text-[36px] mb-4">Реальные проекты</h2>
+    <p class="text-[16px] text-body max-w-[62ch] mb-8 leading-relaxed">То, что уже работает и доступно по ссылке — не макеты, а живые сайты, боты и мини-приложения. Листайте карточки стрелками — у каждого проекта есть Задача, Что сделано и результат в цифрах.</p>
+
+    <div id="filterTabs" class="flex flex-wrap gap-2.5 mb-9">
+      <button data-filter="all" class="filter-btn active">Все проекты</button>
+      <button data-filter="sites" class="filter-btn">Сайты</button>
+      <button data-filter="bots" class="filter-btn">Telegram-боты</button>
+      <button data-filter="ai" class="filter-btn">AI-агенты</button>
     </div>
 
-    <div class="subhead">Боты и AI-агенты</div>
-    <div class="grid">
-      <div class="card"><div class="ic-badge badge-2"><svg class="ic"><use href="#i-inbox"/></svg></div>
-        <div class="card-top"><h3>Бот для сбора заявок</h3><span class="card-price">от 7 000 ₽</span></div>
-        <p>Telegram-бот принимает заявки 24/7, записывает их в Google Таблицу и сразу уведомляет вас.</p>
-        <ul class="feat"><li>Работает по сценарию</li><li>Запись в Google Таблицу</li><li>Без ИИ — дешевле в эксплуатации</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-chat"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-msgs">
-                <div class="msg bot">Здравствуйте! Оставьте заявку — я передам её мастеру.</div>
-                <div class="msg user">Хочу записаться на консультацию</div>
-                <div class="msg bot">Принято ✅ Записал в таблицу, скоро с вами свяжутся</div>
-              </div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-      <div class="card"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-bot"/></svg></div>
-        <div class="card-top"><h3>AI Telegram-бот</h3><span class="card-price">от 15 000 ₽</span></div>
-        <p>Чат-бот с искусственным интеллектом отвечает клиентам круглосуточно. Можно подключить заказы и оплату.</p>
-        <ul class="feat"><li>Хостинг включён</li><li>Доп. модули по запросу</li><li>Расходы 2–4 $/мес</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-chat"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-msgs">
-                <div class="msg user">Сколько стоит доставка?</div>
-                <div class="msg bot">По вашему району — 300 ₽, привезём за 40 минут 🚗</div>
-                <div class="msg user">Отлично, оформляем</div>
-              </div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-      <div class="card"><div class="ic-badge badge-3"><svg class="ic"><use href="#i-magic"/></svg></div>
-        <div class="card-top"><h3>AI-агент</h3><span class="card-price">от 30 000 ₽</span></div>
-        <p>Умный агент ведёт клиента по всей воронке — от знакомства до оплаты, считает стоимость сам.</p>
-        <ul class="feat"><li>Работает 24/7</li><li>Считает стоимость сам</li><li>Себестоимость 5–8 $/мес</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-chat"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-msgs">
-                <div class="msg bot">Подобрал вам тариф «Стандарт», итого 24 500 ₽</div>
-                <div class="msg user">Устраивает, что дальше?</div>
-                <div class="msg bot">Отправляю оферту и ссылку на оплату 📄</div>
-              </div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-    </div>
+    <div class="relative">
+      <button id="prevBtn" aria-label="Назад" class="carousel-arrow -left-4 sm:-left-6">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button id="nextBtn" aria-label="Вперёд" class="carousel-arrow -right-4 sm:-right-6">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
 
-    <div class="subhead">Приложения</div>
-    <div class="grid">
-      <div class="card"><div class="ic-badge badge-1"><svg class="ic"><use href="#i-device"/></svg></div>
-        <div class="card-top"><h3>Mini App для Telegram</h3><span class="card-price">от 30 000 ₽</span></div>
-        <p>Мини-приложение прямо внутри Telegram: каталог, запись, личный кабинет — без установки и лишних переходов.</p>
-        <ul class="feat"><li>Работает внутри Telegram</li><li>Без установки приложения</li><li>Интеграция с оплатой</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-app"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-app">
-                <div class="row"><div class="dot"></div><div class="bar"></div></div>
-                <div class="row"><div class="dot"></div><div class="bar"></div></div>
-                <div class="row"><div class="dot"></div><div class="bar"></div></div>
+      <div id="cardTrack" class="card-track flex gap-6 overflow-x-auto no-scrollbar py-2 scroll-px-5">
+
+        <!-- CARD 1 — RestoAnalytics: жёстко первым. Синтетический мокап телефона с чатом Telegram-бота -->
+        <article class="project-card card-slide shrink-0 w-[330px] sm:w-[400px]" data-cats="bots ai">
+          <div class="rounded-2xl overflow-hidden h-full flex flex-col shadow-navycard" style="background:#0F172A">
+            <div class="p-4">
+              <div class="browser-mock">
+                <div class="browser-chrome">
+                  <span class="browser-navbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="browser-navbtn" style="opacity:.4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div class="browser-addr">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#9AA0A6" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="#9AA0A6" stroke-width="2"/></svg>
+                    <span>iiko-bot-diz3.onrender.com/webapp</span>
+                  </div>
+                </div>
+                <button class="gallery-btn relative block w-full browser-shot-wrap" data-images='["images/project6_1.jpg","images/project6_2.jpg","images/project6_3.jpg"]' data-index="0">
+                  <img src="images/project6_1.jpg" alt="RestoAnalytics — веб-дашборд аналитики iiko" class="gallery-img gallery-fade">
+                  <span class="shot-badge bg-neon text-navy text-[10.5px] font-mono font-bold px-2.5 py-1 rounded-full">1 / 3 · клик</span>
+                </button>
               </div>
-              <div class="mock-caption">Пример: экран мини-приложения внутри Telegram</div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-      <div class="card"><div class="ic-badge badge-2"><svg class="ic"><use href="#i-puzzle"/></svg></div>
-        <div class="card-top"><h3>Веб- и мобильное приложение</h3><span class="card-price">от 55 000 ₽</span></div>
-        <p>Приложение под задачу бизнеса: личный кабинет, сервис бронирования, внутренний инструмент для команды.</p>
-        <ul class="feat"><li>Индивидуальная логика</li><li>Личный кабинет</li><li>Срок зависит от объёма</li></ul>
-        <div class="card-actions">
-          <details><summary>Показать пример</summary>
-            <div class="mock mock-app"><div class="mock-bar"><span></span><span></span><span></span></div>
-              <div class="mock-app">
-                <div class="row"><div class="dot"></div><div class="bar"></div></div>
-                <div class="row"><div class="dot"></div><div class="bar"></div></div>
-                <div class="row"><div class="dot"></div><div class="bar"></div></div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <p class="tag-chip text-[11px] font-bold uppercase text-neon mb-2">Telegram-бот · веб-дашборд · интеграция с iiko</p>
+              <h3 class="font-display font-semibold text-white text-[22px] mb-3">RestoAnalytics для лаунж-бара</h3>
+              <div class="space-y-3 text-[17px] leading-[1.6] text-white/95 mb-4">
+                <p><span class="font-bold text-white">Задача: </span>владельцу лаунжа с кальянной картой нужно было в одном месте видеть план/факт по выручке, а не выгружать отчёты из iiko вручную каждый день.</p>
+                <p><span class="font-bold text-white">Что сделано: </span>Telegram-бот открывает веб-дашборд: план дня, прогноз выручки до конца месяца, трафик гостей и тепловая карта загрузки по часам.</p>
               </div>
-              <div class="mock-caption">Пример: главный экран приложения со списком</div></div>
-          </details>
-          <a href="#contact" class="btn btn-outline btn-sm">Обсудить</a>
-        </div></div>
-    </div>
-  </div>
-</section>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">интеграция iiko</span>
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">прогноз выручки</span>
+              </div>
+              <div class="mt-auto rounded-xl p-4" style="background:#111C36">
+                <p class="tag-chip text-[10.5px] font-bold uppercase text-white/60 mb-2">Результат в цифрах</p>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Скорость получения отчёта</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">+90%</span></div>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Найден потенциал выручки</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">+75 480 ₽/мес</span></div>
+              </div>
+              <a href="https://t.me/Gladarenko_iiko_bot" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1.5 text-[14.5px] font-bold text-neon hover:text-white">Открыть бота <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
 
-<section class="section reveal" id="process">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="tag">Как проходит работа</div>
-      <h2>Просто и прозрачно — от заявки до запуска</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="num">1</div><h4>Заявка и обсуждение</h4><p>Пишете в Telegram или WhatsApp, рассказываете о задаче — уточняю детали и предлагаю формат решения.</p></div>
-      <div class="step"><div class="num">2</div><h4>Смета и план</h4><p>Считаю стоимость и сроки, фиксируем объём работ — без скрытых доплат.</p></div>
-      <div class="step"><div class="num">3</div><h4>Разработка</h4><p>Собираю сайт или бота, показываю прогресс, учитываю правки на каждом этапе.</p></div>
-      <div class="step"><div class="num">4</div><h4>Запуск и поддержка</h4><p>Публикую проект и остаюсь на связи, если что-то нужно донастроить.</p></div>
-    </div>
-  </div>
-</section>
+        <!-- CARD 2 — Суши Раннер: жёстко вторым. Синтетический мокап окна браузера -->
+        <article class="project-card card-slide shrink-0 w-[330px] sm:w-[400px]" data-cats="sites">
+          <div class="rounded-2xl overflow-hidden h-full flex flex-col shadow-navycard" style="background:#0F172A">
+            <div class="p-4">
+              <div class="browser-mock">
+                <div class="browser-chrome">
+                  <span class="browser-navbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="browser-navbtn" style="opacity:.4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div class="browser-addr">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#9AA0A6" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="#9AA0A6" stroke-width="2"/></svg>
+                    <span>sushi-runner.netlify.app</span>
+                  </div>
+                </div>
+                <button class="gallery-btn relative block w-full browser-shot-wrap" data-images='["images/project7_1.jpg","images/project7_2.jpg"]' data-index="0">
+                  <img src="images/project7_1.jpg" alt="Суши Раннер — доставка суши, роллов и пиццы" class="gallery-img gallery-fade">
+                  <span class="shot-badge bg-neon text-navy text-[10.5px] font-mono font-bold px-2.5 py-1 rounded-full">1 / 2 · клик</span>
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <p class="tag-chip text-[11px] font-bold uppercase text-neon mb-2">Лендинг + корзина · доставка еды</p>
+              <h3 class="font-display font-semibold text-white text-[22px] mb-3">Сайт для «Суши Раннер»</h3>
+              <div class="space-y-3 text-[17px] leading-[1.6] text-white/95 mb-4">
+                <p><span class="font-bold text-white">Задача: </span>принимать заказы на доставку суши, роллов и пиццы без звонков оператору.</p>
+                <p><span class="font-bold text-white">Что сделано: </span>онлайн-меню с фото и ценами, корзина с подсчётом суммы, заказ уходит прямо в мессенджер.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">онлайн-меню</span>
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">корзина заказов</span>
+              </div>
+              <div class="mt-auto rounded-xl p-4" style="background:#111C36">
+                <p class="tag-chip text-[10.5px] font-bold uppercase text-white/60 mb-2">Результат в цифрах</p>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Заказы через сайт, а не звонки</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">60%</span></div>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Средний чек за счёт корзины</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">+22%</span></div>
+              </div>
+              <a href="https://sushi-runner.netlify.app/" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1.5 text-[14.5px] font-bold text-neon hover:text-white">Смотреть сайт <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
 
-<section class="section reveal" id="cases">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="tag">Портфолио</div>
-      <h2>Реальные проекты</h2>
-      <p>То, что уже работает и доступно по ссылке — не макеты, а живые сайты и приложения.</p>
-    </div>
-    <div class="case-grid">
-      <div class="case-card">
-        <div class="case-tags"><span class="case-tag">САЙТ-ВИЗИТКА</span><span class="case-tag alt">ТАТУ-СТУДИЯ · ТЮМЕНЬ</span></div>
-        <h3>Сайт для тату-мастера</h3>
-        <p>Собственный сайт для практики художественной татуировки: портфолио работ с лайтбоксом, цены, запись через мессенджеры и блок ухода после сеанса. Тёмная эстетика с золотым акцентом под приватный кабинет.</p>
-        <div class="case-facts">
-          <span>Портфолио с лайтбоксом</span>
-          <span>Запись в 3 мессенджера</span>
-          <span>Прозрачные цены</span>
-          <span>Адаптивная вёрстка</span>
-        </div>
-        <a href="https://dasha-tattoo-tyumen.netlify.app/" target="_blank" rel="noopener" class="btn btn-outline">Смотреть сайт →</a>
+        <!-- CARD 3 — tattoo. Синтетический мокап окна браузера, тёмная ink-тема -->
+        <article class="project-card card-slide shrink-0 w-[330px] sm:w-[400px]" data-cats="sites">
+          <div class="rounded-2xl overflow-hidden h-full flex flex-col shadow-navycard" style="background:#0F172A">
+            <div class="p-4">
+              <div class="browser-mock">
+                <div class="browser-chrome">
+                  <span class="browser-navbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="browser-navbtn" style="opacity:.4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div class="browser-addr">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#9AA0A6" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="#9AA0A6" stroke-width="2"/></svg>
+                    <span>dasha-tattoo-tyumen.netlify.app</span>
+                  </div>
+                </div>
+                <button class="gallery-btn relative block w-full browser-shot-wrap" data-images='["images/project1_1.jpg","images/project1_2.jpg","images/project1_3.jpg"]' data-index="0">
+                  <img src="images/project1_1.jpg" alt="Сайт тату-мастера" class="gallery-img gallery-fade">
+                  <span class="shot-badge bg-neon text-navy text-[10.5px] font-mono font-bold px-2.5 py-1 rounded-full">1 / 3 · клик</span>
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <p class="tag-chip text-[11px] font-bold uppercase text-neon mb-2">Сайт-визитка · тату-студия</p>
+              <h3 class="font-display font-semibold text-white text-[22px] mb-3">Сайт для тату-мастера</h3>
+              <div class="space-y-3 text-[17px] leading-[1.6] text-white/95 mb-4">
+                <p><span class="font-bold text-white">Задача: </span>мастеру нужен имиджевый сайт дороже «визитки в директ».</p>
+                <p><span class="font-bold text-white">Что сделано: </span>портфолио с лайтбоксом, цены и запись в 3 мессенджера вместо личных переписок.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">лайтбокс-галерея</span>
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">адаптивная вёрстка</span>
+              </div>
+              <div class="mt-auto rounded-xl p-4" style="background:#111C36">
+                <p class="tag-chip text-[10.5px] font-bold uppercase text-white/60 mb-2">Результат в цифрах</p>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Заявки в мессенджеры</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">+45%</span></div>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Конверсия визит → заявка</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">+35%</span></div>
+              </div>
+              <a href="https://dasha-tattoo-tyumen.netlify.app/" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1.5 text-[14.5px] font-bold text-neon hover:text-white">Смотреть сайт <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 4 — tarot. Синтетический мокап телефона, мистическая тема -->
+        <article class="project-card card-slide shrink-0 w-[330px] sm:w-[400px]" data-cats="ai bots">
+          <div class="rounded-2xl overflow-hidden h-full flex flex-col shadow-navycard" style="background:#0F172A">
+            <div class="p-4">
+              <div class="browser-mock">
+                <div class="browser-chrome">
+                  <span class="browser-navbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="browser-navbtn" style="opacity:.4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div class="browser-addr">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#9AA0A6" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="#9AA0A6" stroke-width="2"/></svg>
+                    <span>simple-tarot-reads.lovable.app</span>
+                  </div>
+                </div>
+                <button class="gallery-btn relative block w-full browser-shot-wrap" data-images='["images/project2_1.jpg","images/project2_2.jpg"]' data-index="0">
+                  <img src="images/project2_1.jpg" alt="Мистическое Зерцало Таро" class="gallery-img gallery-fade">
+                  <span class="shot-badge bg-neon text-navy text-[10.5px] font-mono font-bold px-2.5 py-1 rounded-full">1 / 2 · клик</span>
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <p class="tag-chip text-[11px] font-bold uppercase text-neon mb-2">Web + Telegram Mini App</p>
+              <h3 class="font-display font-semibold text-white text-[22px] mb-3">Мистическое Зерцало Таро</h3>
+              <div class="space-y-3 text-[17px] leading-[1.6] text-white/95 mb-4">
+                <p><span class="font-bold text-white">Задача: </span>нужен продукт, который одинаково работает как сайт и как Telegram Mini App.</p>
+                <p><span class="font-bold text-white">Что сделано: </span>карта дня для вовлечения, AI-текст расклада и пробный период для конверсии в оплату.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">AI-генерация текста</span>
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">Mini App</span>
+              </div>
+              <div class="mt-auto rounded-xl p-4" style="background:#111C36">
+                <p class="tag-chip text-[10.5px] font-bold uppercase text-white/60 mb-2">Результат в цифрах</p>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Возврат за «картой дня»</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">48%</span></div>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Охват через Telegram</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">×3</span></div>
+              </div>
+              <a href="https://simple-tarot-reads.lovable.app/" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1.5 text-[14.5px] font-bold text-neon hover:text-white">Веб-версия <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 5 — atelier / business sale. Синтетический мокап окна браузера, нейтральная элегантная тема -->
+        <article class="project-card card-slide shrink-0 w-[330px] sm:w-[400px]" data-cats="sites">
+          <div class="rounded-2xl overflow-hidden h-full flex flex-col shadow-navycard" style="background:#0F172A">
+            <div class="p-4">
+              <div class="browser-mock">
+                <div class="browser-chrome">
+                  <span class="browser-navbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="browser-navbtn" style="opacity:.4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div class="browser-addr">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#9AA0A6" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="#9AA0A6" stroke-width="2"/></svg>
+                    <span>pimeru78-create.github.io</span>
+                  </div>
+                </div>
+                <button class="gallery-btn relative block w-full browser-shot-wrap" data-images='["images/project3_1.jpg","images/project3_2.jpg"]' data-index="0">
+                  <img src="images/project3_1.jpg" alt="Продажа ателье Лидии" class="gallery-img gallery-fade">
+                  <span class="shot-badge bg-neon text-navy text-[10.5px] font-mono font-bold px-2.5 py-1 rounded-full">1 / 2 · клик</span>
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <p class="tag-chip text-[11px] font-bold uppercase text-neon mb-2">Лендинг · продажа бизнеса</p>
+              <h3 class="font-display font-semibold text-white text-[22px] mb-3">Продажа ателье «Лидии Ся»</h3>
+              <div class="space-y-3 text-[17px] leading-[1.6] text-white/95 mb-4">
+                <p><span class="font-bold text-white">Задача: </span>продать готовый бизнес не через доску объявлений, а сразу на серьёзных покупателей.</p>
+                <p><span class="font-bold text-white">Что сделано: </span>сайт-презентация с цифрами, реальными отзывами и честной причиной продажи.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">соцдоказательства</span>
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">финансовые метрики</span>
+              </div>
+              <div class="mt-auto rounded-xl p-4" style="background:#111C36">
+                <p class="tag-chip text-[10.5px] font-bold uppercase text-white/60 mb-2">Результат в цифрах</p>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Первый целевой звонок</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">за 48 ч</span></div>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Доля «тёплых» обращений</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">90%</span></div>
+              </div>
+              <a href="https://pimeru78-create.github.io/lidia-sya-atelier/" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1.5 text-[14.5px] font-bold text-neon hover:text-white">Смотреть сайт <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 6 — permanent makeup AI agent. Синтетический мокап окна браузера, розовая тема со сплитом аудитории -->
+        <article class="project-card card-slide shrink-0 w-[330px] sm:w-[400px]" data-cats="ai sites">
+          <div class="rounded-2xl overflow-hidden h-full flex flex-col shadow-navycard" style="background:#0F172A">
+            <div class="p-4">
+              <div class="browser-mock">
+                <div class="browser-chrome">
+                  <span class="browser-navbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="browser-navbtn" style="opacity:.4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div class="browser-addr">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#9AA0A6" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="#9AA0A6" stroke-width="2"/></svg>
+                    <span>claude.ai/code/artifact/…9f9</span>
+                  </div>
+                </div>
+                <button class="gallery-btn relative block w-full browser-shot-wrap" data-images='["images/project4_1.jpg","images/project4_2.jpg"]' data-index="0">
+                  <img src="images/project4_1.jpg" alt="AI-агент для мастера перманента" class="gallery-img gallery-fade">
+                  <span class="shot-badge bg-neon text-navy text-[10.5px] font-mono font-bold px-2.5 py-1 rounded-full">1 / 2 · клик</span>
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <p class="tag-chip text-[11px] font-bold uppercase text-neon mb-2">AI-агент · прототип</p>
+              <h3 class="font-display font-semibold text-white text-[22px] mb-3">Студия перманентного макияжа</h3>
+              <div class="space-y-3 text-[17px] leading-[1.6] text-white/95 mb-4">
+                <p><span class="font-bold text-white">Задача: </span>один сайт должен закрывать две разные аудитории без путаницы.</p>
+                <p><span class="font-bold text-white">Что сделано: </span>отдельный сценарий и CTA для клиентов на процедуру и для мастеров на обучение.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">сегментация аудитории</span>
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">AI-прототип</span>
+              </div>
+              <div class="mt-auto rounded-xl p-4" style="background:#111C36">
+                <p class="tag-chip text-[10.5px] font-bold uppercase text-white/60 mb-2">Результат в цифрах</p>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Релевантность заявок</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">+40%</span></div>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Срок сборки прототипа</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">3 дня</span></div>
+              </div>
+              <a href="https://claude.ai/code/artifact/ebacf3ce-6bf3-4490-84d3-20c4398cc9f9" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1.5 text-[14.5px] font-bold text-neon hover:text-white">Открыть прототип <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 7 — food constructor. Синтетический мокап телефона, свежая зелёная тема -->
+        <article class="project-card card-slide shrink-0 w-[330px] sm:w-[400px]" data-cats="ai bots">
+          <div class="rounded-2xl overflow-hidden h-full flex flex-col shadow-navycard" style="background:#0F172A">
+            <div class="p-4">
+              <div class="browser-mock">
+                <div class="browser-chrome">
+                  <span class="browser-navbtn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <span class="browser-navbtn" style="opacity:.4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                  <div class="browser-addr">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#9AA0A6" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke="#9AA0A6" stroke-width="2"/></svg>
+                    <span>claude.ai/code/artifact/…25b</span>
+                  </div>
+                </div>
+                <button class="gallery-btn relative block w-full browser-shot-wrap" data-images='["images/project5_1.jpg","images/project5_2.jpg","images/project5_3.jpg"]' data-index="0">
+                  <img src="images/project5_1.jpg" alt="Своя Тарелка — конструктор еды" class="gallery-img gallery-fade">
+                  <span class="shot-badge bg-neon text-navy text-[10.5px] font-mono font-bold px-2.5 py-1 rounded-full">1 / 3 · клик</span>
+                </button>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <p class="tag-chip text-[11px] font-bold uppercase text-neon mb-2">Telegram Mini App · конструктор</p>
+              <h3 class="font-display font-semibold text-white text-[22px] mb-3">«Своя Тарелка» — конструктор еды</h3>
+              <div class="space-y-3 text-[17px] leading-[1.6] text-white/95 mb-4">
+                <p><span class="font-bold text-white">Задача: </span>заменить статичное меню ПП-кафе на что-то, что поднимает средний чек.</p>
+                <p><span class="font-bold text-white">Что сделано: </span>интерактивный конструктор блюда с КБЖУ и ценой в реальном времени.</p>
+              </div>
+              <div class="flex flex-wrap gap-2 mb-5">
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">КБЖУ-калькулятор</span>
+                <span class="tag-chip text-[11px] font-semibold bg-white/10 text-neon px-2.5 py-1 rounded-md">Mini App</span>
+              </div>
+              <div class="mt-auto rounded-xl p-4" style="background:#111C36">
+                <p class="tag-chip text-[10.5px] font-bold uppercase text-white/60 mb-2">Результат в цифрах</p>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Средний чек</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">+18%</span></div>
+                <div class="result-row-dark py-1.5 flex justify-between text-[14.5px] font-medium text-white/90"><span>Заказы без оператора</span><span class="tabnum font-extrabold text-neon" style="text-shadow:0 0 14px rgba(47,230,255,.6)">65%</span></div>
+              </div>
+              <a href="https://claude.ai/code/artifact/1c6f7ca6-6e64-4f10-a171-e681e8425c1b" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1.5 text-[14.5px] font-bold text-neon hover:text-white">Открыть прототип <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
       </div>
-      <div class="case-card">
-        <div class="case-tags"><span class="case-tag">WEB + TELEGRAM MINI APP</span><span class="case-tag alt">ТАРО-СЕРВИС</span></div>
-        <h3>Мистическое Зерцало Таро</h3>
-        <p>Приложение для онлайн-раскладов Таро — один и тот же продукт доступен и как сайт, и как мини-приложение прямо в Telegram: карта дня, авторизация и пробный период.</p>
-        <div class="case-facts">
-          <span>5 колод карт</span>
-          <span>10 видов раскладов</span>
-          <span>Работает в Telegram</span>
-          <span>Авторизация пользователей</span>
+      <div id="portDots" class="flex items-center justify-center gap-2 mt-6"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST — белые карточки, крупный текст ============ -->
+<section id="trust" class="border-t border-line">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+    <p class="tag-chip text-accent text-[12.5px] font-semibold uppercase mb-3">Гарантии</p>
+    <h2 class="font-display font-semibold text-ink text-[32px] sm:text-[40px] mb-4">Почему со мной надёжно</h2>
+    <p class="text-[16.5px] text-body max-w-[62ch] mb-14 leading-relaxed">Работаю как с частными клиентами, так и с бизнесом, которому нужны документы и предсказуемость — а не договорённости на словах.</p>
+
+    <div class="grid sm:grid-cols-3 gap-7">
+      <div class="bg-white rounded-2xl p-8 lift-hover" style="box-shadow:0 10px 30px rgba(0,0,0,0.04)">
+        <div class="icon3d w-16 h-16 rounded-full mb-7" style="--c1:#6C8CFF; --c2:#2A4CFF; --sh:rgba(42,76,255,.5)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M8 4h9l3 3v13H8z" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 11h6M11 15h6" stroke="white" stroke-width="1.9" stroke-linecap="round"/></svg>
         </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap;">
-          <a href="https://simple-tarot-reads.lovable.app/" target="_blank" rel="noopener" class="btn btn-outline">Веб-версия →</a>
-          <a href="https://t.me/daria35_scout_bot" target="_blank" rel="noopener" class="btn btn-outline">Открыть в Telegram →</a>
-        </div>
+        <h3 class="font-display font-semibold text-ink text-[21px] mb-3">Официальный договор</h3>
+        <p class="text-[16.5px] leading-relaxed text-body">Работаю как ИП/самозанятая: заключаю договор и выставляю чек на каждый этап. Вы можете отчитаться перед бухгалтерией или партнёрами — никаких переводов «на карту без документов».</p>
       </div>
-      <div class="case-card">
-        <div class="case-tags"><span class="case-tag">ЛЕНДИНГ + КОРЗИНА</span><span class="case-tag alt">ДОСТАВКА ЕДЫ · ТЮМЕНСКИЙ РАЙОН</span></div>
-        <h3>Сайт для Суши Раннер</h3>
-        <p>Сайт доставки суши, роллов и пиццы с меню, корзиной и оформлением заказа: клиент выбирает блюда, указывает адрес или самовывоз и способ оплаты — готовый заказ уходит прямо в мессенджер.</p>
-        <div class="case-facts">
-          <span>Меню с фото и ценами</span>
-          <span>Корзина и подсчёт суммы</span>
-          <span>Доставка или самовывоз</span>
-          <span>Заказ в один клик</span>
+      <div class="bg-white rounded-2xl p-8 lift-hover" style="box-shadow:0 10px 30px rgba(0,0,0,0.04)">
+        <div class="icon3d w-16 h-16 rounded-full mb-7" style="--c1:#4FE0FF; --c2:#0EA5E9; --sh:rgba(14,165,233,.5)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 6.5c0-1.9-2.2-3.5-5-3.5s-5 1.5-5 3.5S9.2 10 12 10s5 1.6 5 3.5-2.2 3.5-5 3.5-5-1.6-5-3.5" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <a href="https://sushi-runner.netlify.app/" target="_blank" rel="noopener" class="btn btn-outline">Смотреть сайт →</a>
+        <h3 class="font-display font-semibold text-ink text-[21px] mb-3">Фиксированная стоимость</h3>
+        <p class="text-[16.5px] leading-relaxed text-body">Цена и объём работ фиксируются в договоре на этапе брифа. Если задача не менялась — сумма не «докручивается» в процессе, никаких сюрпризов в последний момент.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-8 lift-hover" style="box-shadow:0 10px 30px rgba(0,0,0,0.04)">
+        <div class="icon3d w-16 h-16 rounded-full mb-7" style="--c1:#4FE9CE; --c2:#0FB8A6; --sh:rgba(15,184,166,.5)">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4" stroke="#0F172A" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-ink text-[21px] mb-3">Гарантия на код и поддержку</h3>
+        <p class="text-[16.5px] leading-relaxed text-body">После сдачи проекта — 14 дней бесплатно исправляю баги и мелкие правки. Плюс понятная передача доступов и короткое обучение, чтобы вы сами управляли сайтом или ботом.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="contact-section wrap reveal" id="contact">
-  <div class="contact-card">
-    <h2>Готовы обсудить проект?</h2>
-    <p>Напишите мне удобным способом — отвечаю быстро и без лишних формальностей.</p>
-    <div class="contact-btns">
-      <a class="glow-btn tg" href="https://t.me/dasha_vibecodes" target="_blank" rel="noopener"><svg class="ic"><use href="#i-send"/></svg> Telegram</a>
-      <a class="glow-btn wa" href="https://wa.me/qr/R2HWCHOTJWTNP1" target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg> WhatsApp</a>
-      <a class="glow-btn ph" href="tel:+79123232687"><svg class="ic"><use href="#i-phone"/></svg> +7 912 323-26-87</a>
-      <a class="glow-btn em" href="mailto:churuchanova.dv@mail.ru"><svg class="ic"><use href="#i-mail"/></svg> churuchanova.dv@mail.ru</a>
+<!-- ============ PROCESS — премиальный тёмно-синий стиль, неоновые цифры ============ -->
+<section id="process" class="border-t border-line glow-field">
+  <div class="glow-blob w-[480px] h-[480px] top-0 -left-32" style="background:radial-gradient(circle,#5FD4FF,transparent 70%); opacity:.18"></div>
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20 relative z-10">
+    <p class="tag-chip text-accent text-[12.5px] font-semibold uppercase mb-3">Как проходит работа</p>
+    <h2 class="font-display font-semibold text-ink text-[32px] sm:text-[40px] mb-14">Просто и прозрачно — от заявки до запуска</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
+      <div class="rounded-2xl p-7 shadow-navycard" style="background:#0F172A">
+        <div class="font-display font-bold tabnum leading-none mb-5 text-[40px]" style="color:#2FE6FF; text-shadow:0 0 18px rgba(47,230,255,.55)">01</div>
+        <h3 class="font-display font-semibold text-white text-[19px] mb-2.5">Заявка и обсуждение</h3>
+        <p class="text-[16px] leading-relaxed text-white/80">Пишете в Telegram или WhatsApp, рассказываете о задаче — уточняю детали и предлагаю формат решения.</p>
+      </div>
+      <div class="rounded-2xl p-7 shadow-navycard" style="background:#0F172A">
+        <div class="font-display font-bold tabnum leading-none mb-5 text-[40px]" style="color:#2FE6FF; text-shadow:0 0 18px rgba(47,230,255,.55)">02</div>
+        <h3 class="font-display font-semibold text-white text-[19px] mb-2.5">Смета и план</h3>
+        <p class="text-[16px] leading-relaxed text-white/80">Считаю стоимость и сроки, фиксируем объём работ в договоре — без скрытых доплат.</p>
+      </div>
+      <div class="rounded-2xl p-7 shadow-navycard" style="background:#0F172A">
+        <div class="font-display font-bold tabnum leading-none mb-5 text-[40px]" style="color:#2FE6FF; text-shadow:0 0 18px rgba(47,230,255,.55)">03</div>
+        <h3 class="font-display font-semibold text-white text-[19px] mb-2.5">Разработка</h3>
+        <p class="text-[16px] leading-relaxed text-white/80">Собираю сайт или бота, показываю прогресс, учитываю правки на каждом этапе.</p>
+      </div>
+      <div class="rounded-2xl p-7 shadow-navycard" style="background:#0F172A">
+        <div class="font-display font-bold tabnum leading-none mb-5 text-[40px]" style="color:#2FE6FF; text-shadow:0 0 18px rgba(47,230,255,.55)">04</div>
+        <h3 class="font-display font-semibold text-white text-[19px] mb-2.5">Запуск и поддержка</h3>
+        <p class="text-[16px] leading-relaxed text-white/80">Публикую проект и остаюсь на связи 14 дней, если что-то нужно донастроить.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="wrap"><span class="fname">Дарья Чуручанова</span> — сайты, чат-боты и AI-агенты · © 2026</div>
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="border-t border-line glow-field">
+  <div class="glow-blob w-[600px] h-[600px] top-0 left-1/2 -translate-x-1/2" style="background:radial-gradient(circle,#2A4CFF,transparent 70%); opacity:.18"></div>
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-24 relative z-10">
+    <div class="rounded-[28px] px-6 sm:px-14 py-14 sm:py-16 text-center relative overflow-hidden" style="background:#161616">
+      <p class="tag-chip text-[12.5px] font-semibold uppercase text-white/50 mb-4 relative">Готовы обсудить проект?</p>
+      <h2 class="font-display font-semibold text-white text-[30px] sm:text-[40px] mb-4 relative max-w-[24ch] mx-auto">Напишите — отвечаю быстро и без лишних формальностей</h2>
+      <p class="text-white/70 text-[16px] mb-10 relative">Первая консультация бесплатна · заключаю договор · фиксирую смету</p>
+      <div class="flex flex-wrap justify-center gap-3.5 relative">
+        <a href="https://t.me/+79123232687" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-accent hover:bg-accentdeep text-white font-semibold px-6 py-3.5 rounded-full transition-colors shadow-liftup">Написать в Telegram</a>
+        <a href="https://wa.me/79123232687" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white font-semibold px-6 py-3.5 rounded-full transition-colors border border-white/15">WhatsApp</a>
+        <a href="tel:+79123232687" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white font-semibold px-6 py-3.5 rounded-full transition-colors border border-white/15 tabnum">+7 912 323-26-87</a>
+      </div>
+      <p class="text-white/40 text-[13px] mt-8 relative font-mono">churuchanova.dv@mail.ru</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-line py-8 bg-white">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-[13.5px] text-faint font-medium">
+    <span>© 2026 Дарья Чуручанова — сайты, чат-боты и AI-агенты</span>
+    <span class="font-mono">made with tailwind &amp; ai</span>
+  </div>
 </footer>
 
-<script>
-  const burger = document.getElementById('burgerBtn');
-  const menu = document.getElementById('mobileMenu');
-  burger.addEventListener('click', () => menu.classList.toggle('open'));
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+<style>
+  .filter-btn{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:13px; font-weight:600;
+    padding:.55rem 1.1rem;
+    border-radius:9999px;
+    border:1.5px solid #E4E5EA;
+    background:#fff;
+    color:#3A3A40;
+    transition:.15s ease;
+  }
+  .filter-btn:hover{ border-color:#2A4CFF; color:#161616; }
+  .filter-btn.active{ background:#2A4CFF; border-color:#2A4CFF; color:#fff; }
+  .mobile-link{ padding:.5rem 0; border-bottom:1px solid #EEF0F4; }
 
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  .carousel-arrow{
+    display:flex; position:absolute; top:50%; transform:translateY(-50%); z-index:10;
+    width:48px; height:48px; border-radius:9999px;
+    background:#2A4CFF; align-items:center; justify-content:center;
+    box-shadow:0 10px 24px -8px rgba(42,76,255,.55);
+    transition: background .15s ease, transform .15s ease;
+    border:none; cursor:pointer;
+  }
+  .carousel-arrow:hover{ background:#1730C4; transform:translateY(-50%) scale(1.06); }
+  @media (max-width:639px){ .carousel-arrow{ display:none; } }
+</style>
+
+<script>
+  // ===== надёжная прокрутка по якорям =====
+  // Нативный href="#id" + CSS scroll-behavior:smooth работает в обычном браузере.
+  // Дополнительно вызываем scrollIntoView/scrollTo прямо в обработчике клика —
+  // это гарантирует прокрутку и во встраиваемых окружениях (например, iframe
+  // предпросмотра), где чистая нативная навигация иногда не долистывает страницу.
+  function robustScrollTo(el){
+    if(!el) return;
+    try{ el.scrollIntoView({behavior:'smooth', block:'start'}); }catch(e){}
+    const y = el.getBoundingClientRect().top + (window.scrollY || document.documentElement.scrollTop || 0) - 96;
+    try{ window.scrollTo({top:y, behavior:'smooth'}); }catch(e){}
+    document.documentElement.scrollTop = y;
+    document.body.scrollTop = y;
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', () => {
+      const id = a.getAttribute('href').slice(1);
+      if(!id) return;
+      const el = document.getElementById(id);
+      if(el) setTimeout(() => robustScrollTo(el), 0);
+    });
+  });
+
+  // ===== мобильное меню =====
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  mobileMenu.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  // ===== универсальная карусель =====
+  function setupCarousel({ trackId, prevId, nextId, dotsId, itemSelector }){
+    const track = document.getElementById(trackId);
+    const prevBtn = document.getElementById(prevId);
+    const nextBtn = document.getElementById(nextId);
+    const dotsWrap = document.getElementById(dotsId);
+    if(!track){ console.warn('carousel track not found:', trackId); return null; }
+
+    function visibleItems(){
+      return [...track.querySelectorAll(itemSelector)].filter(el => el.style.display !== 'none');
+    }
+    function step(){
+      const items = visibleItems();
+      return items.length ? items[0].getBoundingClientRect().width + 24 : 320;
+    }
+    function buildDots(){
+      if(!dotsWrap) return;
+      dotsWrap.innerHTML = '';
+      const items = visibleItems();
+      items.forEach((item, i) => {
+        const d = document.createElement('button');
+        d.type = 'button';
+        d.className = 'dot-btn' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Слайд ' + (i+1));
+        d.addEventListener('click', () => {
+          track.scrollTo({ left: item.offsetLeft - track.offsetLeft, behavior:'smooth' });
+        });
+        dotsWrap.appendChild(d);
+      });
+    }
+    function updateActiveDot(){
+      if(!dotsWrap) return;
+      const items = visibleItems();
+      const dots = [...dotsWrap.children];
+      if(!items.length || !dots.length) return;
+      let closest = 0, min = Infinity;
+      items.forEach((item, i) => {
+        const d = Math.abs((item.offsetLeft - track.offsetLeft) - track.scrollLeft);
+        if(d < min){ min = d; closest = i; }
+      });
+      dots.forEach((d, i) => d.classList.toggle('active', i === closest));
+    }
+
+    if(prevBtn) prevBtn.addEventListener('click', () => track.scrollBy({ left: -step(), behavior:'smooth' }));
+    if(nextBtn) nextBtn.addEventListener('click', () => track.scrollBy({ left: step(), behavior:'smooth' }));
+    let scrollTimer;
+    track.addEventListener('scroll', () => {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(updateActiveDot, 80);
+    });
+
+    buildDots();
+    return { rebuild: () => { track.scrollTo({left:0}); buildDots(); } };
+  }
+
+  const servicesCarousel  = setupCarousel({ trackId:'servTrack', prevId:'servPrev', nextId:'servNext', dotsId:'servDots', itemSelector:'.serv-card' });
+  const portfolioCarousel = setupCarousel({ trackId:'cardTrack', prevId:'prevBtn', nextId:'nextBtn', dotsId:'portDots', itemSelector:'.project-card' });
+
+  // ===== фильтр услуг =====
+  document.querySelectorAll('#serviceTabs .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#serviceTabs .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.serv-card').forEach(card => {
+        card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none';
+      });
+      if(servicesCarousel) servicesCarousel.rebuild();
+    });
+  });
+
+  // ===== фильтр портфолио =====
+  document.querySelectorAll('#filterTabs .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#filterTabs .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.project-card').forEach(card => {
+        const cats = card.dataset.cats.split(' ');
+        card.style.display = (f === 'all' || cats.includes(f)) ? '' : 'none';
+      });
+      if(portfolioCarousel) portfolioCarousel.rebuild();
+    });
+  });
+
+  // ===== внутренняя галерея кейса =====
+  document.querySelectorAll('.gallery-btn').forEach(btn => {
+    const images = JSON.parse(btn.dataset.images);
+    const img = btn.querySelector('.gallery-img');
+    const label = btn.querySelector('span');
+    btn.addEventListener('click', () => {
+      let i = parseInt(btn.dataset.index, 10);
+      i = (i + 1) % images.length;
+      btn.dataset.index = i;
+      img.style.opacity = 0;
+      setTimeout(() => {
+        img.src = images[i];
+        img.style.opacity = 1;
+        if(label) label.textContent = (i+1) + ' / ' + images.length + ' · клик';
+      }, 180);
+    });
+  });
 </script>
 
 </body>
